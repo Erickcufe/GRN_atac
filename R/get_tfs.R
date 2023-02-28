@@ -23,6 +23,10 @@ ex_neu <- sce_reference[,sce_reference$ident=="Ex"]
 DefaultAssay(nuc) <- "ATAC"
 nuc_neuronEx <- nuc[,Idents(nuc)=="Ex"]
 ranges_annoted <- nuc@assays$ATAC@annotation
+ranges_annoted <- ranges_annoted[seqnames(ranges_annoted) != "chrX", ]
+ranges_annoted <- ranges_annoted[seqnames(ranges_annoted) != "chrY", ]
+ranges_annoted <- ranges_annoted[seqnames(ranges_annoted) != "chrM", ]
+
 saveRDS(ranges_annoted, "ranges_ATAC_annoted.rds")
 
 scGRNom_getTF <- function(df, database = JASPAR2022::JASPAR2022, species_type = 9606, min_score = 0.9,
