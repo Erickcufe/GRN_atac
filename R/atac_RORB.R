@@ -1,5 +1,6 @@
 library(ggplot2)
 library(TFBSTools)
+library(Seurat)
 Seurat.object.NEW <- readRDS("motifs_ATAC.rds")
 
 differential.activity <- FindMarkers(
@@ -20,6 +21,7 @@ enriched.motifs_RORB_Ex <- FindMotifs(
 )
 
 differential.activity <- differential.activity[differential.activity$p_val_adj < 0.05,]
+differential.activity$regions <- rownames(differential.activity)
 
 readr::write_csv(differential.activity, "atac_cellType_markers/RORB+_atac.csv")
 
