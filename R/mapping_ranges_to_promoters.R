@@ -56,7 +56,7 @@ mapping_ranges_to_promoters <- function(credranges){
   genes <- df$gene_name
   gen_sel <- genes[genes != ""]
   gen_sel <- gen_sel[!duplicated(gen_sel)]
-  message("This are the genes that match the SNPs region")
+  message("This are the genes that match the Promoter region/ATAC region")
   print(gen_sel)
   return(credpromoter)
 
