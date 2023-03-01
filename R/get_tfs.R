@@ -1,9 +1,69 @@
 library(Seurat)
 library(SingleCellExperiment)
 library(dplyr)
+library(Signac)
 nuc <- readRDS("SingleR_anotated_ATAC_NEW.rds")
 Idents(nuc) <- nuc$Proplabels
-DefaultAssay(nuc) <- "RNA"
+nuc <- RenameAssays(object = nuc, ATAC = "peaks")
+
+
+library(TFBSTools)
+# Get a list of motif position frequency matrices from the JASPAR database
+pfm <- getMatrixSet(
+  x = JASPAR2022::JASPAR2022,
+  opts = list(collection = "CORE", tax_group = 'vertebrates', all_versions = FALSE)
+)
+
+#Se tuvo que crear un nuevo objecto Seurat porque las versiones cambiaron
+Seurat.object.NEW <- CreateSeuratObject(counts = nuc@assays$RNA@counts,
+                                        meta.data = nuc@meta.data,
+                                        assay = "RNA"
+                                        )
+Seurat.object.NEW[["peaks"]] <- CreateChromatinAssay(counts = nuc@assays$peaks@counts,
+                                                     genome = "hg38")
+DefaultAssay(Seurat.object.NEW) <- "peaks"
+DefaultAssay(nuc) <- "peaks"
+
+VariableFeatures(Seurat.object.NEW) <- VariableFeatures(nuc)
+Idents(Seurat.object.NEW) <- Idents(nuc)
+
+anot_data <- Annotation(nuc)
+Seurat.object.NEW@assays$peaks@annotation <- anot_data
+Seurat.object.NEW@assays$peaks@positionEnrichment <- nuc@assays$peaks@positionEnrichment
+Seurat.object.NEW@assays$peaks@fragments <- nuc@assays$peak@fragments
+
+
+# Se eliminan anotacion de cromosomas que generen conflicto con BSgenome.Hsapiens.UCSC.hg38
+main.chroms <- standardChromosomes(BSgenome.Hsapiens.UCSC.hg38::BSgenome.Hsapiens.UCSC.hg38)
+keep.peaks <- as.logical(seqnames(granges(Seurat.object.NEW)) %in% main.chroms)
+Seurat.object.NEW <- Seurat.object.NEW[keep.peaks, ]
+seqlevels(Seurat.object.NEW@assays$peaks@ranges) <- main.chroms
+
+
+# add motif information
+Seurat.object.NEW <- AddMotifs(
+  object = Seurat.object.NEW,
+  genome = BSgenome.Hsapiens.UCSC.hg38::BSgenome.Hsapiens.UCSC.hg38,
+  pfm = pfm
+)
+
+Seurat.object.NEW@reductions$umap <- nuc@reductions$umap
+Seurat.object.NEW@reductions$lsi <- nuc@reductions$lsi
+
+
+
+# se coloca NULL en ident.2 para que la comparacion sea con todas las demas celulas
+
+saveRDS(Seurat.object.NEW, "motifs_ATAC.rds")
+
+
+
+
+MotifPlot(
+  object = Seurat.object.NEW,
+  motifs = head(rownames(differential.activity)),
+  assay = 'peaks'
+)
 
 sce_reference <- as.SingleCellExperiment(nuc, assay = "ATAC")
 colData(sce_reference) <- as.data.frame(colData(sce_reference)) %>%
