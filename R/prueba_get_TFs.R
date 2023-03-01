@@ -89,9 +89,11 @@ parallel::stopCluster(cl)
 df$promoter_TF <- df_p$promoter_TF[match(df$promoter_id, df_p$promoter_id)]
 df$enhancer_TF <- df_e$enhancer_TF[match(df$enhancer_id, df_e$enhancer_id)]
 
-df <- df[, c('gene','promoter_id','enhancer_id',
-             'promoter_TF','enhancer_TF')]
-colnames(df) <- c('gene','promoter','enhancer',
-                  'promoter_TF','enhancer_TF')
+df <- df[, c('gene','promoter_id',
+             'promoter_TF')]
+colnames(df) <- c('gene','promoter',
+                  'promoter_TF')
+
+saveRDS(df, "promoters_TF_TABLE.rds")
 return(df)
 
