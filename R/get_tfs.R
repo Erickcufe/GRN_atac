@@ -32,7 +32,7 @@ saveRDS(ranges_annoted, "ranges_ATAC_annoted.rds")
 scGRNom_getTF <- function(df, database = JASPAR2022::JASPAR2022, species_type = 9606, min_score = 0.9,
                           pwm_type = 'prob',num_cores = 6){
 
-  load("../CongresoNacionalBioquimica_Merida/data/GOAL_standard.rda")
+  # load("../CongresoNacionalBioquimica_Merida/data/GOAL_standard.rda")
 
   library(JASPAR2022)
 
@@ -119,3 +119,5 @@ scGRNom_getTF <- function(df, database = JASPAR2022::JASPAR2022, species_type = 
 
 
 }
+
+
