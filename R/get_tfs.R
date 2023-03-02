@@ -50,7 +50,10 @@ Seurat.object.NEW <- AddMotifs(
 Seurat.object.NEW@reductions$umap <- nuc@reductions$umap
 Seurat.object.NEW@reductions$lsi <- nuc@reductions$lsi
 
-
+Seurat.object.NEW <- RunChromVAR(
+  object = Seurat.object.NEW,
+  genome = BSgenome.Hsapiens.UCSC.hg38::BSgenome.Hsapiens.UCSC.hg38
+)
 
 # se coloca NULL en ident.2 para que la comparacion sea con todas las demas celulas
 

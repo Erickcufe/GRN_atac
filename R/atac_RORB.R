@@ -33,3 +33,33 @@ MotifPlot(
 ) + theme(text = element_text(size = 25))
 
 dev.off()
+
+
+## Pvalb vs Sst
+
+
+differential.activity <- FindMarkers(
+  object = Seurat.object.NEW,
+  ident.1 = 'Pv',
+  ident.2 = 'RORB+',
+  only.pos = TRUE,
+  test.use = 'LR',
+  min.pct = 0.05,
+  latent.vars = 'nCount_peaks'
+)
+
+# get top differentially accessible peaks
+top.da.peak <- rownames(differential.activity[differential.activity$p_val < 0.005, ])
+enriched.motifs_RORB_Ex <- FindMotifs(
+  object = Seurat.object.NEW,
+  features = top.da.peak
+)
+
+differential.activity <- differential.activity[differential.activity$p_val_adj < 0.05,]
+differential.activity$regions <- rownames(differential.activity)
+
+MotifPlot(
+  object = Seurat.object.NEW,
+  motifs = head(rownames(enriched.motifs_RORB_Ex))
+) + theme(text = element_text(size = 20))
+
