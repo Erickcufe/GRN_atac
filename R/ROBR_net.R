@@ -13,11 +13,22 @@ for(i in 1:length(vect_split)){
 
 
 df <- readRDS("promoters_TF_TABLE.rds")
+df_snps <- readRDS("promoters_SNPs_TF_TABLE.rds")
+
+df <- rbind(df, df_snps)
 # Faltan dos columnas
 
-so_morabito <- readRDS("Anotacion_finalizada_NUEVA_morabito.rds")
-so_morabito_RORB <- so_morabito[ ,so_morabito$tags == "RORB+"]
-saveRDS(so_morabito_RORB, "atac_cellType_markers/so_morabito_RORB.rds")
+so_morabito <- readRDS("anotation_SFG.rds")
+so_morabito$tags <- Idents(so_morabito)
+cell_AD <- na.omit(colnames(so_morabito)[(so_morabito$disease=="AD" & so_morabito$tags=="RORB+")])
+cell_ctrl <- na.omit(colnames(so_morabito)[(so_morabito$disease=="Control" & so_morabito$tags=="RORB+")])
+cells_rorb <- na.omit(colnames(so_morabito)[so_morabito$tags=="RORB+"])
+
+so_morabito_RORB <- so_morabito[ ,cells_rorb]
+so_morabito_RORB_AD <- so_morabito_RORB[,cell_AD]
+so_morabito_RORB_ctrl <- so_morabito_RORB[,cell_ctrl]
+
+# saveRDS(so_morabito_RORB, "atac_cellType_markers/so_morabito_RORB.rds")
 
 gexpr <- so_morabito_RORB@assays$RNA@counts
 df_gene_id = 'hgnc_symbol'
@@ -69,6 +80,11 @@ if(!is.null(open_chrom)){
   unique_ens = unique(overlap_en$queryHits)
   df = df[unique_ens,]
 }
+
+
+# Get TFs of TFs
+
+
 
 cl <- parallel::makeCluster(num_cores) # not overload your computer
 doParallel::registerDoParallel(cl)
@@ -222,4 +238,6 @@ if(nrow(output_df) > 0){
   df <- data.frame(TG = NULL, TF = NULL, enhancer = NULL, promoter = NULL, TFbs = NULL,coef = NULL, mse = NULL)
 }
 
-return(df)
+df_new <- df[df$mse < 1,]
+
+# readr::write_csv(df_new, "RORB_control_net.csv")
