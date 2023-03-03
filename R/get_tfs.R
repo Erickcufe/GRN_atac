@@ -11,7 +11,7 @@ library(TFBSTools)
 # Get a list of motif position frequency matrices from the JASPAR database
 pfm <- getMatrixSet(
   x = JASPAR2022::JASPAR2022,
-  opts = list(collection = "CORE", tax_group = 'vertebrates', all_versions = FALSE)
+  opts = list(species = 9606, all_versions = FALSE)
 )
 
 #Se tuvo que crear un nuevo objecto Seurat porque las versiones cambiaron
