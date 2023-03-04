@@ -1,5 +1,7 @@
 
 # load("../CongresoNacionalBioquimica_Merida/data/GOAL_standard.rda")
+df <- readRDS("ranges_ATAC_annoted.rds")
+df <- data.frame(df)
 df_copy <- df
 df <- df[,c("names", "seqnames", "start.1", "end.1")]
 df <- df[!duplicated(df$start.1), ]

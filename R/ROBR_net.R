@@ -82,9 +82,6 @@ if(!is.null(open_chrom)){
 }
 
 
-# Get TFs of TFs
-
-
 
 cl <- parallel::makeCluster(num_cores) # not overload your computer
 doParallel::registerDoParallel(cl)
@@ -132,6 +129,122 @@ parallel::stopCluster(cl)
 
 df <- df[,c('gene','promoter','TFbs','TF')]
 df <- df[df$TF != df$gene, ]
+
+
+########################################################
+########################################################
+########################################################
+# SECOND ROUND
+
+
+# Get TFs of TFs
+
+# Ocupamos la funcion extract_TFs
+# Necesitamos descargar las localizaciones promotoras de los genes de los TFs
+load("promoter_ranges.rda")
+# promoterranges
+
+select_ranges <- promoterranges[promoterranges$gene_name %in% df$TF]
+select_ranges <- data.frame(select_ranges)
+
+df_2 <- data.frame(gene = select_ranges$gene_name,
+                   gene_chr = paste0("chr",select_ranges$seqnames),
+                   promoter_start = select_ranges$start,
+                   promoter_end = select_ranges$end)
+
+
+df_2 <- extract_TFs(df = df_2)
+
+if(!is.null(open_chrom)){
+  df_2$en_chrs = str_extract(df_2$promoter, "(?i)(?<=chr)\\d+")
+  # Extract promoter start and end positions
+  df_2$en_start = as.numeric(str_extract(df_2$promoter, "(?i)(\\d+){5}"))
+  df_2$en_end = abs(as.numeric(str_extract(df_2$promoter, "(?i)-(\\d+){5}")))
+  df_2$en_start_intend = df_2$en_start -extension_bps
+  df_2$en_end_intend  = df_2$en_end + extension_bps
+
+  colnames(open_chrom) = c('chrs', 'Start', 'Stop')
+  open_chrom$chrs = gsub('chr','', open_chrom$chrs)
+  open_chrom$Start <- as.numeric(open_chrom$Start)
+  open_chrom$Stop <- as.numeric(open_chrom$Stop)
+
+  library(GenomicRanges)
+  en_scGRN = GRanges(seqnames = df_2$en_chrs,
+                     IRanges(start = df_2$en_start_intend,
+                             end = df_2$en_end_intend))
+
+  en_openchrom = GRanges(seqnames = open_chrom$chrs,
+                         IRanges(start = open_chrom$Start,
+                                 end = open_chrom$Stop))
+
+  overlap_en = as.data.frame(
+    findOverlaps(
+      query = en_scGRN,
+      subject = en_openchrom,
+      type = 'any',
+      select = "all",
+      ignore.strand = T
+    )
+  )
+
+  unique_ens = unique(overlap_en$queryHits)
+  df_2 = df_2[unique_ens,]
+}
+
+
+
+cl <- parallel::makeCluster(num_cores) # not overload your computer
+doParallel::registerDoParallel(cl)
+`%dopar%` <- foreach::`%dopar%`
+
+df_2$TFs <- foreach::foreach(i = 1:nrow(df_2), .combine = rbind,
+                           .packages = c('data.table')) %dopar% {
+                             curr_TF <- unique(c(df_2$enhancer_TF[[i]], df_2$promoter_TF[[i]]))
+                             curr_TF <- curr_TF[!is.na(curr_TF)]
+                             if(length(curr_TF) == 0){
+                               curr_TF <- NA
+                             }
+                             data.table::data.table(TFs = list(curr_TF))
+                           }
+parallel::stopCluster(cl)
+
+df_2 <- df_2[, c('gene','promoter','promoter_TF','TFs')]
+df_2 <- df_2[!is.na(df_2$TFs),]
+df_2$id <- seq.int(nrow(df_2))
+df_2_TF <- df_2[,c('TFs','id')][,.(TF = unlist(TFs)), by = id]
+df_2 <- dplyr::left_join(df_2,df_2_TF,by = 'id')
+
+df_2$id <- NULL
+df_2$TFs <- NULL
+
+cl <- parallel::makeCluster(num_cores) # not overload your computer
+doParallel::registerDoParallel(cl)
+df_2$TFbs <- foreach::foreach(i = 1:nrow(df_2), .combine = rbind
+) %dopar% {
+
+  if(is.na(df_2$TF[i])){
+    print("error")
+  }
+
+  if((df_2$TF[i] %in% df_2$enhancer_TF[[i]]) & (df_2$TF[i] %in% df_2$promoter_TF[[i]])){
+    binding_site <- 'both'
+  }else if(df_2$TF[i] %in% df_2$enhancer_TF[[i]]){
+    binding_site <- 'enhancer'
+  }else if(df_2$TF[i] %in% df_2$promoter_TF[[i]]){
+    binding_site <- 'promoter'
+  }
+  binding_site
+}
+parallel::stopCluster(cl)
+
+df_2 <- df_2[,c('gene','promoter','TFbs','TF')]
+df_2 <- df_2[df_2$TF != df_2$gene, ]
+
+
+###############################################################
+###############################################################
+###############################################################
+
 
 
 ###### change TF names from hgnc_symbol to emsembl_id
