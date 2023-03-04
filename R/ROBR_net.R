@@ -360,4 +360,4 @@ df_new <- df[df$mse < 1,]
 
 double_net <- GRNet_2TF(df = df, gexpr = so_morabito_RORB@assays$RNA@counts, open_chrom = df_atac)
 
-
+# readr::write_csv(double_net, "Nets/double_net_RORB+.csv")
