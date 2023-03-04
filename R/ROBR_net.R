@@ -354,3 +354,10 @@ if(nrow(output_df) > 0){
 df_new <- df[df$mse < 1,]
 
 # readr::write_csv(df_new, "RORB_control_net.csv")
+
+
+
+
+double_net <- GRNet_2TF(df = df, gexpr = so_morabito_RORB@assays$RNA@counts, open_chrom = df_atac)
+
+
