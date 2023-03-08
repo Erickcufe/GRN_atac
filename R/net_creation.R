@@ -118,3 +118,6 @@ Non_Vip_AD_net <- GRNet_2TF(df = df, gexpr = so_morabito_Non_Vip_AD@assays$RNA@c
 Non_Vip_Ctrl_net <- GRNet_2TF(df = df, gexpr = so_morabito_Non_Vip_ctrl@assays$RNA@counts, open_chrom = atac_non_vip)
 
 
+save(RORB_net, RORB_AD_net, RORB_Ctrl_net, Ex_net, Ex_AD_net, Ex_Ctrl_net, Pv_net, Pv_AD_net, Pv_Ctrl_net,
+     Sst_net, Sst_AD_net, Sst_Ctrl_net, Vip_net, Vip_AD_net, Vip_Ctrl_net, Non_Vip_net, Non_Vip_AD_net,
+     Non_Vip_Ctrl_net, file = "Nets/CellType_Networks.RData")
