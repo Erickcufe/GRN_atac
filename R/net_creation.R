@@ -92,10 +92,29 @@ RORB_net <- GRNet_2TF(df = df, gexpr = so_morabito_RORB@assays$RNA@counts, open_
 RORB_AD_net <- GRNet_2TF(df = df, gexpr = so_morabito_RORB_AD@assays$RNA@counts, open_chrom = atac_rorb)
 RORB_Ctrl_net <- GRNet_2TF(df = df, gexpr = so_morabito_RORB_ctrl@assays$RNA@counts, open_chrom = atac_rorb)
 
-
 ## Ex
 Ex_net <- GRNet_2TF(df = df, gexpr = so_morabito_Ex@assays$RNA@counts, open_chrom = atac_ex)
 Ex_AD_net <- GRNet_2TF(df = df, gexpr = so_morabito_Ex_AD@assays$RNA@counts, open_chrom = atac_ex)
 Ex_Ctrl_net <- GRNet_2TF(df = df, gexpr = so_morabito_Ex_ctrl@assays$RNA@counts, open_chrom = atac_ex)
+
+## Pv
+Pv_net <- GRNet_2TF(df = df, gexpr = so_morabito_Pv@assays$RNA@counts, open_chrom = atac_pv)
+Pv_AD_net <- GRNet_2TF(df = df, gexpr = so_morabito_Pv_AD@assays$RNA@counts, open_chrom = atac_pv)
+Pv_Ctrl_net <- GRNet_2TF(df = df, gexpr = so_morabito_Pv_ctrl@assays$RNA@counts, open_chrom = atac_pv)
+
+## Sst
+Sst_net <- GRNet_2TF(df = df, gexpr = so_morabito_Sst@assays$RNA@counts, open_chrom = atac_sst)
+Sst_AD_net <- GRNet_2TF(df = df, gexpr = so_morabito_Sst_AD@assays$RNA@counts, open_chrom = atac_sst)
+Sst_Ctrl_net <- GRNet_2TF(df = df, gexpr = so_morabito_Sst_ctrl@assays$RNA@counts, open_chrom = atac_sst)
+
+## Vip
+Vip_net <- GRNet_2TF(df = df, gexpr = so_morabito_Vip@assays$RNA@counts, open_chrom = atac_vip)
+Vip_AD_net <- GRNet_2TF(df = df, gexpr = so_morabito_Vip_AD@assays$RNA@counts, open_chrom = atac_vip)
+Vip_Ctrl_net <- GRNet_2TF(df = df, gexpr = so_morabito_Vip_ctrl@assays$RNA@counts, open_chrom = atac_vip)
+
+## Non-Vip
+Non_Vip_net <- GRNet_2TF(df = df, gexpr = so_morabito_Non_Vip@assays$RNA@counts, open_chrom = atac_non_vip)
+Non_Vip_AD_net <- GRNet_2TF(df = df, gexpr = so_morabito_Non_Vip_AD@assays$RNA@counts, open_chrom = atac_non_vip)
+Non_Vip_Ctrl_net <- GRNet_2TF(df = df, gexpr = so_morabito_Non_Vip_ctrl@assays$RNA@counts, open_chrom = atac_non_vip)
 
 
