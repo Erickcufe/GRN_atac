@@ -16,6 +16,9 @@ extract_TFs <- function(df, min_score = 0.9, database = JASPAR2022::JASPAR2022,
 
   df_p <- dplyr::distinct(df[,c('gene_chr','promoter_start','promoter_end','promoter_id')])
 
+  if(levels(df_p$gene_chr)[1] != "chr1"){
+    df_p$gene_chr <- paste0("chr", df_p$gene_chr)
+  }
   # Se eliminan anotacion de cromosomas que generen conflicto con BSgenome.Hsapiens.UCSC.hg38
   main.chroms <- standardChromosomes(BSgenome.Hsapiens.UCSC.hg38::BSgenome.Hsapiens.UCSC.hg38)
   keep.peaks <- as.logical(df_p$gene_chr %in% main.chroms)
