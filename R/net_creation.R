@@ -141,7 +141,6 @@ RORB_net <- RORB_net %>%
   select(TF, TG, coef, promoter, mse) %>%
   mutate(rmse = sqrt(mse)) %>%
   filter(rmse < mean(rmse))
-
 RORB_net$edge_btw <- edge_betweenness(g_rorb)
 
 
@@ -152,6 +151,13 @@ g_ex <- Ex_net %>%
   graph_from_data_frame(directed = TRUE)
 write_graph(g_ex, file = "Nets/Graph_Ex_SFG.graphml",format = "graphml")
 
+Ex_net <- Ex_net %>%
+  select(TF, TG, coef, promoter, mse) %>%
+  mutate(rmse = sqrt(mse)) %>%
+  filter(rmse <= mean(rmse))
+Ex_net$edge_btw <- edge_betweenness(g_ex)
+
+
 g_pv <- Pv_net %>%
   select(TF, TG, coef, promoter, mse) %>%
   mutate(rmse = sqrt(mse)) %>%
@@ -159,9 +165,53 @@ g_pv <- Pv_net %>%
   graph_from_data_frame(directed = TRUE)
 write_graph(g_pv, file = "Nets/Graph_Pv_contraste_SFG.graphml",format = "graphml")
 
+Pv_net <- Pv_net %>%
+  select(TF, TG, coef, promoter, mse) %>%
+  mutate(rmse = sqrt(mse)) %>%
+  filter(rmse <= mean(rmse))
+Pv_net$edge_btw <- edge_betweenness(g_pv)
+
+
 g_sst <- Sst_net %>%
   select(TF, TG, coef, promoter, mse) %>%
   mutate(rmse = sqrt(mse)) %>%
   filter(rmse <= mean(rmse)) %>%
   graph_from_data_frame(directed = TRUE)
 write_graph(g_sst, file = "Nets/Graph_Sst_SFG.graphml",format = "graphml")
+
+Sst_net <- Sst_net %>%
+  select(TF, TG, coef, promoter, mse) %>%
+  mutate(rmse = sqrt(mse)) %>%
+  filter(rmse <= mean(rmse))
+Sst_net$edge_btw <- edge_betweenness(g_sst)
+
+
+g_vip <- Vip_net %>%
+  select(TF, TG, coef, promoter, mse) %>%
+  mutate(rmse = sqrt(mse)) %>%
+  filter(rmse <= mean(rmse)) %>%
+  graph_from_data_frame(directed = TRUE)
+write_graph(g_vip, file = "Nets/Graph_Vip_SFG.graphml",format = "graphml")
+
+Vip_net <- Vip_net %>%
+  select(TF, TG, coef, promoter, mse) %>%
+  mutate(rmse = sqrt(mse)) %>%
+  filter(rmse <= mean(rmse))
+Vip_net$edge_btw <- edge_betweenness(g_vip)
+
+
+g_non_vip <- Non_Vip_net %>%
+  select(TF, TG, coef, promoter, mse) %>%
+  mutate(rmse = sqrt(mse)) %>%
+  filter(rmse <= mean(rmse)) %>%
+  graph_from_data_frame(directed = TRUE)
+write_graph(g_non_vip, file = "Nets/Graph_Non_Vip_SFG.graphml",format = "graphml")
+
+Non_Vip_net <- Non_Vip_net %>%
+  select(TF, TG, coef, promoter, mse) %>%
+  mutate(rmse = sqrt(mse)) %>%
+  filter(rmse <= mean(rmse))
+Vip_net$edge_btw <- edge_betweenness(g_non_vip)
+
+save(Non_Vip_net, g_non_vip, Vip_net, g_vip, Sst_net, g_sst, Pv_net, g_pv,
+     Ex_net, g_ex, RORB_net, g_rorb, file = "Nets/CellType_Networks.RData")
