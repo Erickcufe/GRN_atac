@@ -4,8 +4,8 @@
 
 load("image_for_networks.RData")
 
-df <- readRDS("promoters_TFs.rds")
-
+# df <- readRDS("promoters_TF.rds")
+# df <- df[!is.na(df$promoter_TF), ]
 library(dplyr)
 library(Seurat)
 # snRNA

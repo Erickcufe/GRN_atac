@@ -1,4 +1,14 @@
 
+load("promoter_ranges.rda")
+
+pr <- data.frame(promoterranges)
+df_pro <- data.frame(gene = pr$gene_name,
+                     gene_chr = pr$seqnames,
+                     promoter_start = pr$start,
+                     promoter_end = pr$end)
+
+new_TFs <- extract_TFs(df_pro)
+
 # load("../CongresoNacionalBioquimica_Merida/data/GOAL_standard.rda")
 df <- readRDS("ranges_ATAC_annoted.rds")
 df <- data.frame(df)
