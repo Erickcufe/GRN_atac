@@ -84,6 +84,7 @@ so_morabito_Non_Vip_ctrl <- so_morabito_Pv[,cell_ctrl_Non_Vip]
 atac_non_vip <- readr::read_csv("atac_cellType_markers/Non-Vip_atac.csv") %>%
   atac_input()
 
+
 ####################################
 ############### Outputs  ###########
 ####################################
@@ -129,17 +130,38 @@ save(RORB_net,Ex_net, Pv_net,
 library(igraph)
 library(dplyr)
 
-g_rorb <- RORB_net %>% filter(mse <= 0.5) %>%
+g_rorb <- RORB_net %>%
   select(TF, TG, coef, promoter, mse) %>%
+  mutate(rmse = sqrt(mse)) %>%
+  filter(rmse < mean(rmse)) %>%
   graph_from_data_frame(directed = TRUE)
-write_graph(g_rorb, file = "Nets/Graph_RORB_SFG.graphml",format = "graphml")
+write_graph(g_rorb, file = "Nets/Graph_RORB_comparacion_SFG.graphml",format = "graphml")
 
-g_ex <- Ex_net %>% filter(mse <= 0.5) %>%
+RORB_net <- RORB_net %>%
   select(TF, TG, coef, promoter, mse) %>%
-  graph_from_data_frame(directed = TRUE)
-write_graph(g_rorb, file = "Nets/Graph_Ex_SFG.graphml",format = "graphml")
+  mutate(rmse = sqrt(mse)) %>%
+  filter(rmse < mean(rmse))
 
-g_pv <- Pv_net %>% filter(mse <= 1) %>%
+RORB_net$edge_btw <- edge_betweenness(g_rorb)
+
+
+g_ex <- Ex_net %>%
   select(TF, TG, coef, promoter, mse) %>%
+  mutate(rmse = sqrt(mse)) %>%
+  filter(rmse <= mean(rmse)) %>%
   graph_from_data_frame(directed = TRUE)
-write_graph(g_rorb, file = "Nets/Graph_Pv_SFG.graphml",format = "graphml")
+write_graph(g_ex, file = "Nets/Graph_Ex_SFG.graphml",format = "graphml")
+
+g_pv <- Pv_net %>%
+  select(TF, TG, coef, promoter, mse) %>%
+  mutate(rmse = sqrt(mse)) %>%
+  filter(rmse <= mean(rmse)) %>%
+  graph_from_data_frame(directed = TRUE)
+write_graph(g_pv, file = "Nets/Graph_Pv_contraste_SFG.graphml",format = "graphml")
+
+g_sst <- Sst_net %>%
+  select(TF, TG, coef, promoter, mse) %>%
+  mutate(rmse = sqrt(mse)) %>%
+  filter(rmse <= mean(rmse)) %>%
+  graph_from_data_frame(directed = TRUE)
+write_graph(g_sst, file = "Nets/Graph_Sst_SFG.graphml",format = "graphml")

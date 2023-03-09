@@ -16,6 +16,7 @@ df <- readRDS("promoters_TF_TABLE.rds")
 df_snps <- readRDS("promoters_SNPs_TF_TABLE.rds")
 
 df <- rbind(df, df_snps)
+df <- df[!is.na(df$promoter_TF), ]
 # Faltan dos columnas
 
 so_morabito <- readRDS("anotation_SFG.rds")
