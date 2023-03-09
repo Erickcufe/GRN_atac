@@ -121,3 +121,25 @@ Non_Vip_Ctrl_net <- GRNet_2TF(df = df, gexpr = so_morabito_Non_Vip_ctrl@assays$R
 
 save(RORB_net,Ex_net, Pv_net,
      Sst_net,Vip_net, Non_Vip_net, file = "Nets/CellType_Networks.RData")
+
+####################################
+############### Igraph  ###########
+####################################
+
+library(igraph)
+library(dplyr)
+
+g_rorb <- RORB_net %>% filter(mse <= 0.5) %>%
+  select(TF, TG, coef, promoter, mse) %>%
+  graph_from_data_frame(directed = TRUE)
+write_graph(g_rorb, file = "Nets/Graph_RORB_SFG.graphml",format = "graphml")
+
+g_ex <- Ex_net %>% filter(mse <= 0.5) %>%
+  select(TF, TG, coef, promoter, mse) %>%
+  graph_from_data_frame(directed = TRUE)
+write_graph(g_rorb, file = "Nets/Graph_Ex_SFG.graphml",format = "graphml")
+
+g_pv <- Pv_net %>% filter(mse <= 1) %>%
+  select(TF, TG, coef, promoter, mse) %>%
+  graph_from_data_frame(directed = TRUE)
+write_graph(g_rorb, file = "Nets/Graph_Pv_SFG.graphml",format = "graphml")
