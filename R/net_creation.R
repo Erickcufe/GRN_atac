@@ -211,7 +211,7 @@ Non_Vip_net <- Non_Vip_net %>%
   select(TF, TG, coef, promoter, mse) %>%
   mutate(rmse = sqrt(mse)) %>%
   filter(rmse <= mean(rmse))
-Vip_net$edge_btw <- edge_betweenness(g_non_vip)
+Non_Vip_net$edge_btw <- edge_betweenness(g_non_vip)
 
-save(Non_Vip_net, g_non_vip, Vip_net, g_vip, Sst_net, g_sst, Pv_net, g_pv,
+save(Non_Vip_net, g_non_vip, Vip_net, g_vip, Pv_net, g_pv,
      Ex_net, g_ex, RORB_net, g_rorb, file = "Nets/CellType_Networks.RData")
