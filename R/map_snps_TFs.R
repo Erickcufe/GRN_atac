@@ -105,6 +105,35 @@ save(results_snps_rorb, file = "RORB/posciones_snps_motifbreak.rda")
 chr1_53738678_53739782 <- snpsByOverlaps(snps_ids, GRanges("1:53738678-53739782"))
 chr1_53738678_53739782 <- data.frame(chr1_53738678_53739782)
 
+chr11_34639677_34644676 <- snpsByOverlaps(snps_ids, GRanges("11:34639677-34644676"))
+chr11_34639677_34644676 <- data.frame(chr11_34639677_34644676)
+
+chr11_7017847_7022846 <- snpsByOverlaps(snps_ids, GRanges("11:7017847-7022846"))
+chr11_7017847_7022846 <- data.frame(chr11_7017847_7022846)
+
+chr11_7017736_7022735 <- snpsByOverlaps(snps_ids, GRanges("11:7017736-7022735"))
+chr11_7017736_7022735 <- data.frame(chr11_7017736_7022735)
+
+chr3_25427787_25428711 <- snpsByOverlaps(snps_ids, GRanges("3:25427787-25428711"))
+chr3_25427787_25428711 <- data.frame(chr3_25427787_25428711)
+
+chr20_20366382_20368506 <- snpsByOverlaps(snps_ids, GRanges("20:20366382-20368506"))
+chr20_20366382_20368506 <- data.frame(chr20_20366382_20368506)
+
+chr12_20365604_20370603 <- snpsByOverlaps(snps_ids, GRanges("12:20365604-20370603"))
+chr12_20365604_20370603 <- data.frame(chr12_20365604_20370603)
+
+list_positions_ex <- list(chr12_20365604_20370603 = chr12_20365604_20370603$RefSNP_id,
+                       chr20_20366382_20368506 = chr20_20366382_20368506$RefSNP_id,
+                       chr3_25427787_25428711 = chr3_25427787_25428711$RefSNP_id,
+                       chr11_7017736_7022735 = chr11_7017736_7022735$RefSNP_id,
+                       chr11_7017847_7022846 = chr11_7017847_7022846$RefSNP_id,
+                       chr11_34639677_34644676 = chr11_34639677_34644676$RefSNP_id,
+                       chr1_53738678_53739782 = chr1_53738678_53739782$RefSNP_id)
+
+results_snps_ex <- purrr::map(list_positions_ex, search_motifBreak)
+
+save(results_snps_ex, file = "Ex/posciones_snps_motifbreak.rda")
 
 
 

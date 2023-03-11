@@ -1,0 +1,4571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns
+         http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+<!-- Created by igraph -->
+  <key id="v_name" for="node" attr.name="name" attr.type="string"/>
+  <key id="e_coef" for="edge" attr.name="coef" attr.type="double"/>
+  <key id="e_promoter" for="edge" attr.name="promoter" attr.type="string"/>
+  <key id="e_mse" for="edge" attr.name="mse" attr.type="double"/>
+  <key id="e_rmse" for="edge" attr.name="rmse" attr.type="double"/>
+  <graph id="G" edgedefault="directed">
+    <node id="n0">
+      <data key="v_name">POU3F1</data>
+    </node>
+    <node id="n1">
+      <data key="v_name">GLIS1</data>
+    </node>
+    <node id="n2">
+      <data key="v_name">MEF2D</data>
+    </node>
+    <node id="n3">
+      <data key="v_name">ATF6</data>
+    </node>
+    <node id="n4">
+      <data key="v_name">RXRG</data>
+    </node>
+    <node id="n5">
+      <data key="v_name">POU2F1</data>
+    </node>
+    <node id="n6">
+      <data key="v_name">ZNF281</data>
+    </node>
+    <node id="n7">
+      <data key="v_name">ZBTB18</data>
+    </node>
+    <node id="n8">
+      <data key="v_name">KLF11</data>
+    </node>
+    <node id="n9">
+      <data key="v_name">POU3F3</data>
+    </node>
+    <node id="n10">
+      <data key="v_name">TBR1</data>
+    </node>
+    <node id="n11">
+      <data key="v_name">SP3</data>
+    </node>
+    <node id="n12">
+      <data key="v_name">STAT1</data>
+    </node>
+    <node id="n13">
+      <data key="v_name">PPARG</data>
+    </node>
+    <node id="n14">
+      <data key="v_name">ZNF148</data>
+    </node>
+    <node id="n15">
+      <data key="v_name">KLF15</data>
+    </node>
+    <node id="n16">
+      <data key="v_name">SOX2</data>
+    </node>
+    <node id="n17">
+      <data key="v_name">BCL6</data>
+    </node>
+    <node id="n18">
+      <data key="v_name">REST</data>
+    </node>
+    <node id="n19">
+      <data key="v_name">NR3C2</data>
+    </node>
+    <node id="n20">
+      <data key="v_name">IRF2</data>
+    </node>
+    <node id="n21">
+      <data key="v_name">MEF2C</data>
+    </node>
+    <node id="n22">
+      <data key="v_name">NR2F1</data>
+    </node>
+    <node id="n23">
+      <data key="v_name">TCF7</data>
+    </node>
+    <node id="n24">
+      <data key="v_name">EGR1</data>
+    </node>
+    <node id="n25">
+      <data key="v_name">NR3C1</data>
+    </node>
+    <node id="n26">
+      <data key="v_name">RREB1</data>
+    </node>
+    <node id="n27">
+      <data key="v_name">ZSCAN31</data>
+    </node>
+    <node id="n28">
+      <data key="v_name">RXRB</data>
+    </node>
+    <node id="n29">
+      <data key="v_name">ZNF76</data>
+    </node>
+    <node id="n30">
+      <data key="v_name">PPARD</data>
+    </node>
+    <node id="n31">
+      <data key="v_name">NFYA</data>
+    </node>
+    <node id="n32">
+      <data key="v_name">RUNX2</data>
+    </node>
+    <node id="n33">
+      <data key="v_name">BACH2</data>
+    </node>
+    <node id="n34">
+      <data key="v_name">POU3F2</data>
+    </node>
+    <node id="n35">
+      <data key="v_name">PRDM1</data>
+    </node>
+    <node id="n36">
+      <data key="v_name">ESR1</data>
+    </node>
+    <node id="n37">
+      <data key="v_name">MAFK</data>
+    </node>
+    <node id="n38">
+      <data key="v_name">ETV1</data>
+    </node>
+    <node id="n39">
+      <data key="v_name">ZNF282</data>
+    </node>
+    <node id="n40">
+      <data key="v_name">KLF10</data>
+    </node>
+    <node id="n41">
+      <data key="v_name">ZNF16</data>
+    </node>
+    <node id="n42">
+      <data key="v_name">NFIB</data>
+    </node>
+    <node id="n43">
+      <data key="v_name">KLF9</data>
+    </node>
+    <node id="n44">
+      <data key="v_name">ZNF189</data>
+    </node>
+    <node id="n45">
+      <data key="v_name">RXRA</data>
+    </node>
+    <node id="n46">
+      <data key="v_name">ZEB1</data>
+    </node>
+    <node id="n47">
+      <data key="v_name">TEAD1</data>
+    </node>
+    <node id="n48">
+      <data key="v_name">SPI1</data>
+    </node>
+    <node id="n49">
+      <data key="v_name">PKNOX2</data>
+    </node>
+    <node id="n50">
+      <data key="v_name">FLI1</data>
+    </node>
+    <node id="n51">
+      <data key="v_name">ZNF740</data>
+    </node>
+    <node id="n52">
+      <data key="v_name">SP1</data>
+    </node>
+    <node id="n53">
+      <data key="v_name">STAT2</data>
+    </node>
+    <node id="n54">
+      <data key="v_name">ASCL1</data>
+    </node>
+    <node id="n55">
+      <data key="v_name">ZNF410</data>
+    </node>
+    <node id="n56">
+      <data key="v_name">KLF13</data>
+    </node>
+    <node id="n57">
+      <data key="v_name">TCF12</data>
+    </node>
+    <node id="n58">
+      <data key="v_name">MEF2A</data>
+    </node>
+    <node id="n59">
+      <data key="v_name">SOX8</data>
+    </node>
+    <node id="n60">
+      <data key="v_name">ZNF263</data>
+    </node>
+    <node id="n61">
+      <data key="v_name">TFAP4</data>
+    </node>
+    <node id="n62">
+      <data key="v_name">MAZ</data>
+    </node>
+    <node id="n63">
+      <data key="v_name">ZNF768</data>
+    </node>
+    <node id="n64">
+      <data key="v_name">CTCF</data>
+    </node>
+    <node id="n65">
+      <data key="v_name">MAF</data>
+    </node>
+    <node id="n66">
+      <data key="v_name">TP53</data>
+    </node>
+    <node id="n67">
+      <data key="v_name">THRA</data>
+    </node>
+    <node id="n68">
+      <data key="v_name">NR1D1</data>
+    </node>
+    <node id="n69">
+      <data key="v_name">RARA</data>
+    </node>
+    <node id="n70">
+      <data key="v_name">SP2</data>
+    </node>
+    <node id="n71">
+      <data key="v_name">MAFG</data>
+    </node>
+    <node id="n72">
+      <data key="v_name">TGIF1</data>
+    </node>
+    <node id="n73">
+      <data key="v_name">ZNF24</data>
+    </node>
+    <node id="n74">
+      <data key="v_name">TCF4</data>
+    </node>
+    <node id="n75">
+      <data key="v_name">ZNF317</data>
+    </node>
+    <node id="n76">
+      <data key="v_name">ZNF682</data>
+    </node>
+    <node id="n77">
+      <data key="v_name">ZNF708</data>
+    </node>
+    <node id="n78">
+      <data key="v_name">ZNF675</data>
+    </node>
+    <node id="n79">
+      <data key="v_name">USF2</data>
+    </node>
+    <node id="n80">
+      <data key="v_name">ZNF382</data>
+    </node>
+    <node id="n81">
+      <data key="v_name">POU2F2</data>
+    </node>
+    <node id="n82">
+      <data key="v_name">ERF</data>
+    </node>
+    <node id="n83">
+      <data key="v_name">NR1H2</data>
+    </node>
+    <node id="n84">
+      <data key="v_name">ZNF528</data>
+    </node>
+    <node id="n85">
+      <data key="v_name">ZNF701</data>
+    </node>
+    <node id="n86">
+      <data key="v_name">ZNF320</data>
+    </node>
+    <node id="n87">
+      <data key="v_name">MZF1</data>
+    </node>
+    <node id="n88">
+      <data key="v_name">PKNOX1</data>
+    </node>
+    <node id="n89">
+      <data key="v_name">MAFF</data>
+    </node>
+    <node id="n90">
+      <data key="v_name">SREBF2</data>
+    </node>
+    <node id="n91">
+      <data key="v_name">ELK1</data>
+    </node>
+    <node id="n92">
+      <data key="v_name">AR</data>
+    </node>
+    <node id="n93">
+      <data key="v_name">USF1</data>
+    </node>
+    <node id="n94">
+      <data key="v_name">IRF1</data>
+    </node>
+    <node id="n95">
+      <data key="v_name">ZKSCAN3</data>
+    </node>
+    <node id="n96">
+      <data key="v_name">SP8</data>
+    </node>
+    <node id="n97">
+      <data key="v_name">ZNF707</data>
+    </node>
+    <node id="n98">
+      <data key="v_name">ONECUT1</data>
+    </node>
+    <node id="n99">
+      <data key="v_name">TCF3</data>
+    </node>
+    <node id="n100">
+      <data key="v_name">ZNF85</data>
+    </node>
+    <node id="n101">
+      <data key="v_name">ZNF460</data>
+    </node>
+    <node id="n102">
+      <data key="v_name">ZNF530</data>
+    </node>
+    <node id="n103">
+      <data key="v_name">ZNF418</data>
+    </node>
+    <node id="n104">
+      <data key="v_name">TGIF2</data>
+    </node>
+    <node id="n105">
+      <data key="v_name">HES7</data>
+    </node>
+    <node id="n106">
+      <data key="v_name">NR1D2</data>
+    </node>
+    <node id="n107">
+      <data key="v_name">SMAD5</data>
+    </node>
+    <node id="n108">
+      <data key="v_name">CUX1</data>
+    </node>
+    <node id="n109">
+      <data key="v_name">HLF</data>
+    </node>
+    <node id="n110">
+      <data key="v_name">ZFP14</data>
+    </node>
+    <node id="n111">
+      <data key="v_name">ZNF331</data>
+    </node>
+    <node id="n112">
+      <data key="v_name">ATF4</data>
+    </node>
+    <node id="n113">
+      <data key="v_name">TEF</data>
+    </node>
+    <node id="n114">
+      <data key="v_name">MTF1</data>
+    </node>
+    <node id="n115">
+      <data key="v_name">GLI2</data>
+    </node>
+    <node id="n116">
+      <data key="v_name">NFKB1</data>
+    </node>
+    <node id="n117">
+      <data key="v_name">EBF1</data>
+    </node>
+    <node id="n118">
+      <data key="v_name">SRF</data>
+    </node>
+    <node id="n119">
+      <data key="v_name">GLI3</data>
+    </node>
+    <node id="n120">
+      <data key="v_name">CEBPD</data>
+    </node>
+    <node id="n121">
+      <data key="v_name">ZNF143</data>
+    </node>
+    <node id="n122">
+      <data key="v_name">ZNF140</data>
+    </node>
+    <node id="n123">
+      <data key="v_name">ESR2</data>
+    </node>
+    <node id="n124">
+      <data key="v_name">ZSCAN29</data>
+    </node>
+    <node id="n125">
+      <data key="v_name">SMAD3</data>
+    </node>
+    <node id="n126">
+      <data key="v_name">THAP11</data>
+    </node>
+    <node id="n127">
+      <data key="v_name">SREBF1</data>
+    </node>
+    <node id="n128">
+      <data key="v_name">ZNF652</data>
+    </node>
+    <node id="n129">
+      <data key="v_name">CEBPA</data>
+    </node>
+    <node id="n130">
+      <data key="v_name">DBP</data>
+    </node>
+    <node id="n131">
+      <data key="v_name">IRF3</data>
+    </node>
+    <node id="n132">
+      <data key="v_name">ZNF8</data>
+    </node>
+    <node id="n133">
+      <data key="v_name">CEBPB</data>
+    </node>
+    <node id="n134">
+      <data key="v_name">VAX2</data>
+    </node>
+    <node id="n135">
+      <data key="v_name">THAP1</data>
+    </node>
+    <node id="n136">
+      <data key="v_name">NFIL3</data>
+    </node>
+    <node id="n137">
+      <data key="v_name">TEAD4</data>
+    </node>
+    <node id="n138">
+      <data key="v_name">RELB</data>
+    </node>
+    <node id="n139">
+      <data key="v_name">VSX1</data>
+    </node>
+    <node id="n140">
+      <data key="v_name">JUN</data>
+    </node>
+    <node id="n141">
+      <data key="v_name">E2F6</data>
+    </node>
+    <node id="n142">
+      <data key="v_name">CREB1</data>
+    </node>
+    <node id="n143">
+      <data key="v_name">FOXP1</data>
+    </node>
+    <node id="n144">
+      <data key="v_name">ETV5</data>
+    </node>
+    <node id="n145">
+      <data key="v_name">RBPJ</data>
+    </node>
+    <node id="n146">
+      <data key="v_name">CLOCK</data>
+    </node>
+    <node id="n147">
+      <data key="v_name">LEF1</data>
+    </node>
+    <node id="n148">
+      <data key="v_name">SOX4</data>
+    </node>
+    <node id="n149">
+      <data key="v_name">FOXO3</data>
+    </node>
+    <node id="n150">
+      <data key="v_name">FOXK1</data>
+    </node>
+    <node id="n151">
+      <data key="v_name">IKZF1</data>
+    </node>
+    <node id="n152">
+      <data key="v_name">ZNF680</data>
+    </node>
+    <node id="n153">
+      <data key="v_name">ZKSCAN5</data>
+    </node>
+    <node id="n154">
+      <data key="v_name">FOXP2</data>
+    </node>
+    <node id="n155">
+      <data key="v_name">PLAG1</data>
+    </node>
+    <node id="n156">
+      <data key="v_name">HSF1</data>
+    </node>
+    <node id="n157">
+      <data key="v_name">PBX3</data>
+    </node>
+    <node id="n158">
+      <data key="v_name">TCF7L2</data>
+    </node>
+    <node id="n159">
+      <data key="v_name">FOXJ2</data>
+    </node>
+    <node id="n160">
+      <data key="v_name">ELK3</data>
+    </node>
+    <node id="n161">
+      <data key="v_name">FOXO1</data>
+    </node>
+    <node id="n162">
+      <data key="v_name">ELF1</data>
+    </node>
+    <node id="n163">
+      <data key="v_name">IRF9</data>
+    </node>
+    <node id="n164">
+      <data key="v_name">NFATC4</data>
+    </node>
+    <node id="n165">
+      <data key="v_name">MAX</data>
+    </node>
+    <node id="n166">
+      <data key="v_name">HSF4</data>
+    </node>
+    <node id="n167">
+      <data key="v_name">FOXK2</data>
+    </node>
+    <node id="n168">
+      <data key="v_name">ZNF324</data>
+    </node>
+    <node id="n169">
+      <data key="v_name">PATZ1</data>
+    </node>
+    <node id="n170">
+      <data key="v_name">SOX10</data>
+    </node>
+    <node id="n171">
+      <data key="v_name">TBX18</data>
+    </node>
+    <node id="n172">
+      <data key="v_name">IRF7</data>
+    </node>
+    <node id="n173">
+      <data key="v_name">BATF</data>
+    </node>
+    <node id="n174">
+      <data key="v_name">ZNF257</data>
+    </node>
+    <node id="n175">
+      <data key="v_name">ZNF816</data>
+    </node>
+    <node id="n176">
+      <data key="v_name">THRB</data>
+    </node>
+    <node id="n177">
+      <data key="v_name">NR6A1</data>
+    </node>
+    <node id="n178">
+      <data key="v_name">NFIC</data>
+    </node>
+    <node id="n179">
+      <data key="v_name">NFIX</data>
+    </node>
+    <node id="n180">
+      <data key="v_name">PBX1</data>
+    </node>
+    <node id="n181">
+      <data key="v_name">RFX3</data>
+    </node>
+    <node id="n182">
+      <data key="v_name">TFCP2</data>
+    </node>
+    <node id="n183">
+      <data key="v_name">RFX1</data>
+    </node>
+    <node id="n184">
+      <data key="v_name">ZNF135</data>
+    </node>
+    <node id="n185">
+      <data key="v_name">ELF2</data>
+    </node>
+    <node id="n186">
+      <data key="v_name">ZNF354A</data>
+    </node>
+    <node id="n187">
+      <data key="v_name">SP4</data>
+    </node>
+    <node id="n188">
+      <data key="v_name">KLF12</data>
+    </node>
+    <node id="n189">
+      <data key="v_name">NFE2L1</data>
+    </node>
+    <node id="n190">
+      <data key="v_name">ZNF136</data>
+    </node>
+    <node id="n191">
+      <data key="v_name">GABPA</data>
+    </node>
+    <node id="n192">
+      <data key="v_name">ZNF610</data>
+    </node>
+    <node id="n193">
+      <data key="v_name">MLXIPL</data>
+    </node>
+    <node id="n194">
+      <data key="v_name">RORA</data>
+    </node>
+    <node id="n195">
+      <data key="v_name">RFX2</data>
+    </node>
+    <node id="n196">
+      <data key="v_name">E2F3</data>
+    </node>
+    <node id="n197">
+      <data key="v_name">ZNF214</data>
+    </node>
+    <node id="n198">
+      <data key="v_name">IRF8</data>
+    </node>
+    <node id="n199">
+      <data key="v_name">BACH1</data>
+    </node>
+    <node id="n200">
+      <data key="v_name">RFX5</data>
+    </node>
+    <node id="n201">
+      <data key="v_name">ZNF93</data>
+    </node>
+    <node id="n202">
+      <data key="v_name">SP9</data>
+    </node>
+    <node id="n203">
+      <data key="v_name">NFE2L2</data>
+    </node>
+    <node id="n204">
+      <data key="v_name">KLF3</data>
+    </node>
+    <node id="n205">
+      <data key="v_name">HSF2</data>
+    </node>
+    <node id="n206">
+      <data key="v_name">SCRT1</data>
+    </node>
+    <node id="n207">
+      <data key="v_name">ZBTB26</data>
+    </node>
+    <node id="n208">
+      <data key="v_name">NFYB</data>
+    </node>
+    <node id="n209">
+      <data key="v_name">KLF16</data>
+    </node>
+    <node id="n210">
+      <data key="v_name">ZBTB7A</data>
+    </node>
+    <node id="n211">
+      <data key="v_name">MEF2B</data>
+    </node>
+    <node id="n212">
+      <data key="v_name">ZNF549</data>
+    </node>
+    <node id="n213">
+      <data key="v_name">ZNF211</data>
+    </node>
+    <node id="n214">
+      <data key="v_name">ZNF417</data>
+    </node>
+    <node id="n215">
+      <data key="v_name">IRF5</data>
+    </node>
+    <node id="n216">
+      <data key="v_name">POU2F3</data>
+    </node>
+    <node id="n217">
+      <data key="v_name">INSM1</data>
+    </node>
+    <node id="n218">
+      <data key="v_name">JDP2</data>
+    </node>
+    <node id="n219">
+      <data key="v_name">JUND</data>
+    </node>
+    <node id="n220">
+      <data key="v_name">RFX4</data>
+    </node>
+    <node id="n221">
+      <data key="v_name">MEIS2</data>
+    </node>
+    <node id="n222">
+      <data key="v_name">CEBPG</data>
+    </node>
+    <node id="n223">
+      <data key="v_name">NKX2-2</data>
+    </node>
+    <node id="n224">
+      <data key="v_name">ZNF75D</data>
+    </node>
+    <node id="n225">
+      <data key="v_name">TP63</data>
+    </node>
+    <node id="n226">
+      <data key="v_name">ZBTB14</data>
+    </node>
+    <node id="n227">
+      <data key="v_name">VDR</data>
+    </node>
+    <node id="n228">
+      <data key="v_name">FOSL2</data>
+    </node>
+    <node id="n229">
+      <data key="v_name">ATF2</data>
+    </node>
+    <node id="n230">
+      <data key="v_name">NR2C2</data>
+    </node>
+    <node id="n231">
+      <data key="v_name">ZNF354C</data>
+    </node>
+    <node id="n232">
+      <data key="v_name">PBX2</data>
+    </node>
+    <node id="n233">
+      <data key="v_name">ATF7</data>
+    </node>
+    <node id="n234">
+      <data key="v_name">FOS</data>
+    </node>
+    <node id="n235">
+      <data key="v_name">YY1</data>
+    </node>
+    <node id="n236">
+      <data key="v_name">ZNF343</data>
+    </node>
+    <node id="n237">
+      <data key="v_name">NFATC2</data>
+    </node>
+    <node id="n238">
+      <data key="v_name">TCFL5</data>
+    </node>
+    <node id="n239">
+      <data key="v_name">DMRTA2</data>
+    </node>
+    <node id="n240">
+      <data key="v_name">TEAD3</data>
+    </node>
+    <node id="n241">
+      <data key="v_name">NR1I2</data>
+    </node>
+    <node id="n242">
+      <data key="v_name">GRHL2</data>
+    </node>
+    <node id="n243">
+      <data key="v_name">AIM2</data>
+    </node>
+    <node id="n244">
+      <data key="v_name">RPS29</data>
+    </node>
+    <node id="n245">
+      <data key="v_name">LRR1</data>
+    </node>
+    <node id="n246">
+      <data key="v_name">POLE2</data>
+    </node>
+    <node id="n247">
+      <data key="v_name">ZBTB1</data>
+    </node>
+    <node id="n248">
+      <data key="v_name">ARHGEF1</data>
+    </node>
+    <node id="n249">
+      <data key="v_name">SLCO5A1</data>
+    </node>
+    <node id="n250">
+      <data key="v_name">FOXG1-AS1</data>
+    </node>
+    <node id="n251">
+      <data key="v_name">DPY19L2</data>
+    </node>
+    <node id="n252">
+      <data key="v_name">TTC39C-AS1</data>
+    </node>
+    <node id="n253">
+      <data key="v_name">UCHL1-AS1</data>
+    </node>
+    <node id="n254">
+      <data key="v_name">TUBB2B</data>
+    </node>
+    <node id="n255">
+      <data key="v_name">CCN3</data>
+    </node>
+    <node id="n256">
+      <data key="v_name">CDO1</data>
+    </node>
+    <edge source="n0" target="n243">
+      <data key="e_coef">-1.43732270537759e-05</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n1" target="n243">
+      <data key="e_coef">1.59672523373371e-05</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n2" target="n243">
+      <data key="e_coef">4.12306111728129e-05</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n3" target="n243">
+      <data key="e_coef">0.000100639848954741</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n4" target="n243">
+      <data key="e_coef">-7.15731373595917e-05</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n5" target="n243">
+      <data key="e_coef">1.45981228754451e-05</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n5" target="n243">
+      <data key="e_coef">1.45981228754451e-05</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n6" target="n243">
+      <data key="e_coef">0.000344183817183125</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n7" target="n243">
+      <data key="e_coef">-5.18439839774617e-05</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n8" target="n243">
+      <data key="e_coef">-1.91083608331131e-05</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n9" target="n243">
+      <data key="e_coef">1.13393621915802e-05</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n10" target="n243">
+      <data key="e_coef">-5.9394579854277e-06</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n11" target="n243">
+      <data key="e_coef">0.000118576422320493</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n12" target="n243">
+      <data key="e_coef">9.87298151172419e-05</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n13" target="n243">
+      <data key="e_coef">0.000613100313045132</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n14" target="n243">
+      <data key="e_coef">0.000365095395325331</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n15" target="n243">
+      <data key="e_coef">-5.38349603925673e-05</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n16" target="n243">
+      <data key="e_coef">0.000104567510753277</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n16" target="n243">
+      <data key="e_coef">0.000104567510753277</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n17" target="n243">
+      <data key="e_coef">-1.82745423994655e-05</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n18" target="n243">
+      <data key="e_coef">-6.06912227161452e-06</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n19" target="n243">
+      <data key="e_coef">0.000401136116576802</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n19" target="n243">
+      <data key="e_coef">0.000401136116576802</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n20" target="n243">
+      <data key="e_coef">0.000159550004589002</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n21" target="n243">
+      <data key="e_coef">-0.000636687378998131</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n22" target="n243">
+      <data key="e_coef">0.000237852134126207</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n23" target="n243">
+      <data key="e_coef">0.000108984071165181</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n24" target="n243">
+      <data key="e_coef">-9.52741038465399e-06</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n25" target="n243">
+      <data key="e_coef">-0.000185016000101818</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n25" target="n243">
+      <data key="e_coef">-0.000185016000101818</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n26" target="n243">
+      <data key="e_coef">-1.11171100911112e-05</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n27" target="n243">
+      <data key="e_coef">-6.2568577941616e-05</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n28" target="n243">
+      <data key="e_coef">-3.40250157578011e-05</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n29" target="n243">
+      <data key="e_coef">6.2146721153741e-05</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n30" target="n243">
+      <data key="e_coef">2.83876444821009e-05</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n31" target="n243">
+      <data key="e_coef">2.40399601143578e-05</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n32" target="n243">
+      <data key="e_coef">7.46876583146147e-06</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n33" target="n243">
+      <data key="e_coef">0.000727428941945405</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n34" target="n243">
+      <data key="e_coef">-1.45860839442449e-05</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n35" target="n243">
+      <data key="e_coef">-1.67296356812272e-05</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n35" target="n243">
+      <data key="e_coef">-1.67296356812272e-05</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n36" target="n243">
+      <data key="e_coef">-6.16416035053989e-06</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n36" target="n243">
+      <data key="e_coef">-6.16416035053989e-06</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n37" target="n243">
+      <data key="e_coef">2.08708510137869e-05</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n38" target="n243">
+      <data key="e_coef">-9.12549898300614e-06</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n39" target="n243">
+      <data key="e_coef">-4.61416490286612e-05</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n40" target="n243">
+      <data key="e_coef">-6.06447947800322e-06</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n41" target="n243">
+      <data key="e_coef">3.20100677562341e-05</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n42" target="n243">
+      <data key="e_coef">0.00175730246614226</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n43" target="n243">
+      <data key="e_coef">-2.43005155413748e-05</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n43" target="n243">
+      <data key="e_coef">-2.43005155413748e-05</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n44" target="n243">
+      <data key="e_coef">-3.39516594953798e-05</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n45" target="n243">
+      <data key="e_coef">5.80229013089188e-05</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n46" target="n243">
+      <data key="e_coef">-8.55258311450719e-05</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n47" target="n243">
+      <data key="e_coef">0.000121876492425278</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n48" target="n243">
+      <data key="e_coef">-9.20219734181554e-06</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n49" target="n243">
+      <data key="e_coef">0.000269100515745729</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n49" target="n243">
+      <data key="e_coef">0.000269100515745729</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n50" target="n243">
+      <data key="e_coef">-3.87573241875563e-06</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n51" target="n243">
+      <data key="e_coef">6.34577196875364e-05</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n52" target="n243">
+      <data key="e_coef">8.26036322420101e-05</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n53" target="n243">
+      <data key="e_coef">0.000151203120011211</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n54" target="n243">
+      <data key="e_coef">-1.83811719484977e-05</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n55" target="n243">
+      <data key="e_coef">2.21098572492671e-05</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n56" target="n243">
+      <data key="e_coef">0.000256814632144787</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n56" target="n243">
+      <data key="e_coef">0.000256814632144787</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n57" target="n243">
+      <data key="e_coef">0.00119480941095658</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n58" target="n243">
+      <data key="e_coef">8.02260672880336e-06</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n59" target="n243">
+      <data key="e_coef">1.64588022254245e-05</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n59" target="n243">
+      <data key="e_coef">1.64588022254245e-05</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n60" target="n243">
+      <data key="e_coef">0.000130154874109996</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n60" target="n243">
+      <data key="e_coef">0.000130154874109996</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n61" target="n243">
+      <data key="e_coef">3.80442536760284e-05</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n61" target="n243">
+      <data key="e_coef">3.80442536760284e-05</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n62" target="n243">
+      <data key="e_coef">-2.55599039346975e-05</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n63" target="n243">
+      <data key="e_coef">2.58799123033418e-05</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n63" target="n243">
+      <data key="e_coef">2.58799123033418e-05</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n64" target="n243">
+      <data key="e_coef">0.000137710555636289</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n65" target="n243">
+      <data key="e_coef">-0.000159606125271806</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n65" target="n243">
+      <data key="e_coef">-0.000159606125271806</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n66" target="n243">
+      <data key="e_coef">5.23358475672495e-05</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n67" target="n243">
+      <data key="e_coef">1.18756408722976e-05</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n68" target="n243">
+      <data key="e_coef">-5.79472612258246e-05</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n69" target="n243">
+      <data key="e_coef">1.09839220678261e-05</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n70" target="n243">
+      <data key="e_coef">8.53952240008835e-05</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n70" target="n243">
+      <data key="e_coef">8.53952240008835e-05</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n71" target="n243">
+      <data key="e_coef">0.000302349102023526</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n71" target="n243">
+      <data key="e_coef">0.000302349102023526</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n72" target="n243">
+      <data key="e_coef">-5.47655018378033e-06</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n72" target="n243">
+      <data key="e_coef">-5.47655018378033e-06</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n73" target="n243">
+      <data key="e_coef">0.000120838844681166</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n73" target="n243">
+      <data key="e_coef">0.000120838844681166</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n74" target="n243">
+      <data key="e_coef">0.000386544309913032</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n75" target="n243">
+      <data key="e_coef">1.56371313546427e-05</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n76" target="n243">
+      <data key="e_coef">5.77690468605052e-05</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n76" target="n243">
+      <data key="e_coef">5.77690468605052e-05</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n77" target="n243">
+      <data key="e_coef">-3.78581247907561e-05</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n78" target="n243">
+      <data key="e_coef">-0.000268818204507212</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n79" target="n243">
+      <data key="e_coef">-6.0475327019712e-05</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n80" target="n243">
+      <data key="e_coef">1.23564074788036e-05</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n80" target="n243">
+      <data key="e_coef">1.23564074788036e-05</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n81" target="n243">
+      <data key="e_coef">0.000116448470366029</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n82" target="n243">
+      <data key="e_coef">-1.56570361477482e-05</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n83" target="n243">
+      <data key="e_coef">-3.43500083939876e-05</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n84" target="n243">
+      <data key="e_coef">-0.000113874198342503</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n85" target="n243">
+      <data key="e_coef">2.00333517223915e-05</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n85" target="n243">
+      <data key="e_coef">2.00333517223915e-05</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n86" target="n243">
+      <data key="e_coef">-2.89444087204499e-05</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n86" target="n243">
+      <data key="e_coef">-2.89444087204499e-05</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n87" target="n243">
+      <data key="e_coef">-6.93430859931932e-05</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n88" target="n243">
+      <data key="e_coef">-0.000124575612186019</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n88" target="n243">
+      <data key="e_coef">-0.000124575612186019</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n89" target="n243">
+      <data key="e_coef">-7.80915282981178e-06</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n90" target="n243">
+      <data key="e_coef">4.88019655060514e-05</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n91" target="n243">
+      <data key="e_coef">0.00021135430579591</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n92" target="n243">
+      <data key="e_coef">0.0002882373973779</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n93" target="n243">
+      <data key="e_coef">9.00014143771509e-05</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n94" target="n243">
+      <data key="e_coef">-9.12496360594329e-06</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n95" target="n243">
+      <data key="e_coef">2.89365203924491e-05</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n96" target="n243">
+      <data key="e_coef">0.000113643067910109</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n97" target="n243">
+      <data key="e_coef">3.09055738271072e-05</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n98" target="n243">
+      <data key="e_coef">5.76588786923268e-05</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n99" target="n243">
+      <data key="e_coef">3.42713653507331e-05</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n100" target="n243">
+      <data key="e_coef">7.63769987844375e-06</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n101" target="n243">
+      <data key="e_coef">1.80721910168632e-05</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n102" target="n243">
+      <data key="e_coef">7.44532096919797e-06</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n103" target="n243">
+      <data key="e_coef">9.0749883579316e-05</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n104" target="n243">
+      <data key="e_coef">-6.05931286196097e-06</data>
+      <data key="e_promoter">chr1:159138009-159143008</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n104" target="n243">
+      <data key="e_coef">-6.05931286196097e-06</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n105" target="n243">
+      <data key="e_coef">-4.27898869980814e-06</data>
+      <data key="e_promoter">chr1:159141438-159142463</data>
+      <data key="e_mse">0.0166868908740868</data>
+      <data key="e_rmse">0.129177749144684</data>
+    </edge>
+    <edge source="n106" target="n244">
+      <data key="e_coef">0.114871389258291</data>
+      <data key="e_promoter">chr5:49596665-49601664</data>
+      <data key="e_mse">0.661552956885662</data>
+      <data key="e_rmse">0.813359057787926</data>
+    </edge>
+    <edge source="n14" target="n244">
+      <data key="e_coef">0.0509165544392676</data>
+      <data key="e_promoter">chr5:49596665-49601664</data>
+      <data key="e_mse">0.661552956885662</data>
+      <data key="e_rmse">0.813359057787926</data>
+    </edge>
+    <edge source="n107" target="n244">
+      <data key="e_coef">0.0500269032326336</data>
+      <data key="e_promoter">chr5:49596665-49601664</data>
+      <data key="e_mse">0.661552956885662</data>
+      <data key="e_rmse">0.813359057787926</data>
+    </edge>
+    <edge source="n29" target="n244">
+      <data key="e_coef">0.0132850639547295</data>
+      <data key="e_promoter">chr5:49596665-49601664</data>
+      <data key="e_mse">0.661552956885662</data>
+      <data key="e_rmse">0.813359057787926</data>
+    </edge>
+    <edge source="n36" target="n244">
+      <data key="e_coef">0.0156354007074046</data>
+      <data key="e_promoter">chr5:49596665-49601664</data>
+      <data key="e_mse">0.661552956885662</data>
+      <data key="e_rmse">0.813359057787926</data>
+    </edge>
+    <edge source="n108" target="n244">
+      <data key="e_coef">0.00661502851225019</data>
+      <data key="e_promoter">chr5:49596665-49601664</data>
+      <data key="e_mse">0.661552956885662</data>
+      <data key="e_rmse">0.813359057787926</data>
+    </edge>
+    <edge source="n46" target="n244">
+      <data key="e_coef">-0.0110327414577672</data>
+      <data key="e_promoter">chr5:49596665-49601664</data>
+      <data key="e_mse">0.661552956885662</data>
+      <data key="e_rmse">0.813359057787926</data>
+    </edge>
+    <edge source="n47" target="n244">
+      <data key="e_coef">0.0529513593139207</data>
+      <data key="e_promoter">chr5:49596665-49601664</data>
+      <data key="e_mse">0.661552956885662</data>
+      <data key="e_rmse">0.813359057787926</data>
+    </edge>
+    <edge source="n55" target="n244">
+      <data key="e_coef">0.0131164661085293</data>
+      <data key="e_promoter">chr5:49596665-49601664</data>
+      <data key="e_mse">0.661552956885662</data>
+      <data key="e_rmse">0.813359057787926</data>
+    </edge>
+    <edge source="n62" target="n244">
+      <data key="e_coef">0.0195003810717694</data>
+      <data key="e_promoter">chr5:49596665-49601664</data>
+      <data key="e_mse">0.661552956885662</data>
+      <data key="e_rmse">0.813359057787926</data>
+    </edge>
+    <edge source="n68" target="n244">
+      <data key="e_coef">0.037946607940907</data>
+      <data key="e_promoter">chr5:49596665-49601664</data>
+      <data key="e_mse">0.661552956885662</data>
+      <data key="e_rmse">0.813359057787926</data>
+    </edge>
+    <edge source="n109" target="n244">
+      <data key="e_coef">0.0211270366013105</data>
+      <data key="e_promoter">chr5:49596665-49601664</data>
+      <data key="e_mse">0.661552956885662</data>
+      <data key="e_rmse">0.813359057787926</data>
+    </edge>
+    <edge source="n77" target="n244">
+      <data key="e_coef">0.0245646025654324</data>
+      <data key="e_promoter">chr5:49596665-49601664</data>
+      <data key="e_mse">0.661552956885662</data>
+      <data key="e_rmse">0.813359057787926</data>
+    </edge>
+    <edge source="n110" target="n244">
+      <data key="e_coef">0.0508707428600425</data>
+      <data key="e_promoter">chr5:49596665-49601664</data>
+      <data key="e_mse">0.661552956885662</data>
+      <data key="e_rmse">0.813359057787926</data>
+    </edge>
+    <edge source="n111" target="n244">
+      <data key="e_coef">0.0287537025836847</data>
+      <data key="e_promoter">chr5:49596665-49601664</data>
+      <data key="e_mse">0.661552956885662</data>
+      <data key="e_rmse">0.813359057787926</data>
+    </edge>
+    <edge source="n112" target="n244">
+      <data key="e_coef">0.0749824473324692</data>
+      <data key="e_promoter">chr5:49596665-49601664</data>
+      <data key="e_mse">0.661552956885662</data>
+      <data key="e_rmse">0.813359057787926</data>
+    </edge>
+    <edge source="n113" target="n244">
+      <data key="e_coef">0.0439781685879097</data>
+      <data key="e_promoter">chr5:49596665-49601664</data>
+      <data key="e_mse">0.661552956885662</data>
+      <data key="e_rmse">0.813359057787926</data>
+    </edge>
+    <edge source="n90" target="n244">
+      <data key="e_coef">0.0027756685872648</data>
+      <data key="e_promoter">chr5:49596665-49601664</data>
+      <data key="e_mse">0.661552956885662</data>
+      <data key="e_rmse">0.813359057787926</data>
+    </edge>
+    <edge source="n114" target="n245">
+      <data key="e_coef">5.37995807262509e-05</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n115" target="n245">
+      <data key="e_coef">1.67437694479393e-05</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n13" target="n245">
+      <data key="e_coef">9.20933912054162e-05</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n106" target="n245">
+      <data key="e_coef">0.000283226612460969</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n14" target="n245">
+      <data key="e_coef">0.000189304252441742</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n18" target="n245">
+      <data key="e_coef">-3.26636019782341e-06</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n116" target="n245">
+      <data key="e_coef">0.000307065638189692</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n107" target="n245">
+      <data key="e_coef">0.000128746838242719</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n117" target="n245">
+      <data key="e_coef">-2.83298074258448e-06</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n29" target="n245">
+      <data key="e_coef">0.000149400494508881</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n118" target="n245">
+      <data key="e_coef">3.19456845024737e-05</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n36" target="n245">
+      <data key="e_coef">-1.90451488271246e-05</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n119" target="n245">
+      <data key="e_coef">2.57584405024316e-05</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n108" target="n245">
+      <data key="e_coef">0.000566129045334421</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n120" target="n245">
+      <data key="e_coef">-3.22941131398995e-06</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n45" target="n245">
+      <data key="e_coef">0.000285814960705415</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n46" target="n245">
+      <data key="e_coef">0.000373066340102793</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n121" target="n245">
+      <data key="e_coef">-2.00892060542137e-05</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n47" target="n245">
+      <data key="e_coef">0.000406778825164579</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n51" target="n245">
+      <data key="e_coef">0.000187453839919062</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n52" target="n245">
+      <data key="e_coef">-1.9684704925612e-05</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n122" target="n245">
+      <data key="e_coef">5.75060612044383e-05</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n123" target="n245">
+      <data key="e_coef">9.67615885215707e-05</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n124" target="n245">
+      <data key="e_coef">-2.56885858658964e-05</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n125" target="n245">
+      <data key="e_coef">4.46325723234334e-06</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n62" target="n245">
+      <data key="e_coef">3.60963158943516e-05</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n126" target="n245">
+      <data key="e_coef">-1.69425875157467e-05</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n127" target="n245">
+      <data key="e_coef">-4.55871257157997e-05</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n68" target="n245">
+      <data key="e_coef">0.000101811236226652</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n69" target="n245">
+      <data key="e_coef">-1.81515287077177e-05</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n70" target="n245">
+      <data key="e_coef">1.91922812453888e-05</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n128" target="n245">
+      <data key="e_coef">0.000207676843807251</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n109" target="n245">
+      <data key="e_coef">6.54840046055703e-05</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n76" target="n245">
+      <data key="e_coef">7.36438836113705e-05</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n77" target="n245">
+      <data key="e_coef">-3.66740566798693e-06</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n129" target="n245">
+      <data key="e_coef">-3.67307999713318e-06</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n110" target="n245">
+      <data key="e_coef">0.000102370040741824</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n80" target="n245">
+      <data key="e_coef">-0.000116401296324406</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n130" target="n245">
+      <data key="e_coef">-4.25616185825959e-06</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n131" target="n245">
+      <data key="e_coef">0.00010502974246667</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n111" target="n245">
+      <data key="e_coef">0.000255304291772827</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n132" target="n245">
+      <data key="e_coef">-3.27316777695489e-05</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n87" target="n245">
+      <data key="e_coef">0.000164653489124891</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n133" target="n245">
+      <data key="e_coef">-4.19626620992259e-05</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n112" target="n245">
+      <data key="e_coef">-3.35502148591946e-05</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n113" target="n245">
+      <data key="e_coef">-2.51133400448145e-06</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n90" target="n245">
+      <data key="e_coef">-0.000229523245831526</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n134" target="n245">
+      <data key="e_coef">-4.32116449020296e-06</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n94" target="n245">
+      <data key="e_coef">-3.82427854853142e-06</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n135" target="n245">
+      <data key="e_coef">3.44954048040007e-05</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n136" target="n245">
+      <data key="e_coef">3.32849629583765e-06</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n137" target="n245">
+      <data key="e_coef">-3.36442157034258e-06</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n138" target="n245">
+      <data key="e_coef">-3.72503144635276e-06</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n101" target="n245">
+      <data key="e_coef">-2.15058932014425e-05</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n139" target="n245">
+      <data key="e_coef">-2.87136068708034e-05</data>
+      <data key="e_promoter">chr5:49596440-49601439</data>
+      <data key="e_mse">0.00786243235515041</data>
+      <data key="e_rmse">0.0886703578156218</data>
+    </edge>
+    <edge source="n140" target="n246">
+      <data key="e_coef">0.0336547713869988</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n140" target="n246">
+      <data key="e_coef">0.0336547713869988</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n4" target="n246">
+      <data key="e_coef">-0.00108104625395687</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n6" target="n246">
+      <data key="e_coef">0.00130405912816318</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n6" target="n246">
+      <data key="e_coef">0.00130405912816318</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n141" target="n246">
+      <data key="e_coef">0.00314240605904047</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n141" target="n246">
+      <data key="e_coef">0.00314240605904047</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n10" target="n246">
+      <data key="e_coef">0.0031980524885695</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n12" target="n246">
+      <data key="e_coef">0.0105393539449708</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n12" target="n246">
+      <data key="e_coef">0.0105393539449708</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n142" target="n246">
+      <data key="e_coef">0.00146300723211299</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n142" target="n246">
+      <data key="e_coef">0.00146300723211299</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n143" target="n246">
+      <data key="e_coef">0.0061457697908586</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n143" target="n246">
+      <data key="e_coef">0.0061457697908586</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n16" target="n246">
+      <data key="e_coef">0.00310194181707487</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n144" target="n246">
+      <data key="e_coef">0.00615848365627905</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n144" target="n246">
+      <data key="e_coef">0.00615848365627905</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n145" target="n246">
+      <data key="e_coef">0.0120572574856688</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n146" target="n246">
+      <data key="e_coef">0.00304842651190154</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n147" target="n246">
+      <data key="e_coef">-0.00194561191616082</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n20" target="n246">
+      <data key="e_coef">0.00871310684369173</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n20" target="n246">
+      <data key="e_coef">0.00871310684369173</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n148" target="n246">
+      <data key="e_coef">-0.0221070077378347</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n148" target="n246">
+      <data key="e_coef">-0.0221070077378347</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n149" target="n246">
+      <data key="e_coef">0.00194918364255927</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n150" target="n246">
+      <data key="e_coef">0.0133782414784284</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n150" target="n246">
+      <data key="e_coef">0.0133782414784284</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n38" target="n246">
+      <data key="e_coef">0.00513493078199613</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n38" target="n246">
+      <data key="e_coef">0.00513493078199613</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n151" target="n246">
+      <data key="e_coef">-0.00774183022262008</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n152" target="n246">
+      <data key="e_coef">0.00717031334926339</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n152" target="n246">
+      <data key="e_coef">0.00717031334926339</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n153" target="n246">
+      <data key="e_coef">0.000961840168746381</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n153" target="n246">
+      <data key="e_coef">0.000961840168746381</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n154" target="n246">
+      <data key="e_coef">-0.00476056089165347</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n154" target="n246">
+      <data key="e_coef">-0.00476056089165347</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n155" target="n246">
+      <data key="e_coef">0.00970893458339869</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n155" target="n246">
+      <data key="e_coef">0.00970893458339869</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n156" target="n246">
+      <data key="e_coef">0.0187786537590964</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n41" target="n246">
+      <data key="e_coef">-0.00660393916593188</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n41" target="n246">
+      <data key="e_coef">-0.00660393916593188</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n157" target="n246">
+      <data key="e_coef">-0.00642853011826007</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n157" target="n246">
+      <data key="e_coef">-0.00642853011826007</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n158" target="n246">
+      <data key="e_coef">0.0292629817535234</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n158" target="n246">
+      <data key="e_coef">0.0292629817535234</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n47" target="n246">
+      <data key="e_coef">-0.0107190529000501</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n48" target="n246">
+      <data key="e_coef">-0.00479648702908624</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n48" target="n246">
+      <data key="e_coef">-0.00479648702908624</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n50" target="n246">
+      <data key="e_coef">-0.00422711574224314</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n50" target="n246">
+      <data key="e_coef">-0.00422711574224314</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n159" target="n246">
+      <data key="e_coef">0.0299014383939936</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n159" target="n246">
+      <data key="e_coef">0.0299014383939936</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n160" target="n246">
+      <data key="e_coef">-0.00253622571256741</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n160" target="n246">
+      <data key="e_coef">-0.00253622571256741</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n122" target="n246">
+      <data key="e_coef">-0.009987197350633</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n122" target="n246">
+      <data key="e_coef">-0.009987197350633</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n161" target="n246">
+      <data key="e_coef">0.00732977793573813</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n161" target="n246">
+      <data key="e_coef">0.00732977793573813</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n162" target="n246">
+      <data key="e_coef">-0.0142265376130832</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n162" target="n246">
+      <data key="e_coef">-0.0142265376130832</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n163" target="n246">
+      <data key="e_coef">-0.00928881462099093</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n164" target="n246">
+      <data key="e_coef">-0.00205795891034868</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n164" target="n246">
+      <data key="e_coef">-0.00205795891034868</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n165" target="n246">
+      <data key="e_coef">0.0284621020355509</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n60" target="n246">
+      <data key="e_coef">0.012807369956465</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n60" target="n246">
+      <data key="e_coef">0.012807369956465</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n61" target="n246">
+      <data key="e_coef">-0.0210250827941074</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n61" target="n246">
+      <data key="e_coef">-0.0210250827941074</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n166" target="n246">
+      <data key="e_coef">0.0365609834089781</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n69" target="n246">
+      <data key="e_coef">-0.0110489865658905</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n167" target="n246">
+      <data key="e_coef">0.00958548724380294</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n167" target="n246">
+      <data key="e_coef">0.00958548724380294</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n78" target="n246">
+      <data key="e_coef">-0.00954879419761877</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n78" target="n246">
+      <data key="e_coef">-0.00954879419761877</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n110" target="n246">
+      <data key="e_coef">0.0147510637161662</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n110" target="n246">
+      <data key="e_coef">0.0147510637161662</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n82" target="n246">
+      <data key="e_coef">-0.0161896122875551</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n82" target="n246">
+      <data key="e_coef">-0.0161896122875551</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n131" target="n246">
+      <data key="e_coef">0.00196749428698667</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n131" target="n246">
+      <data key="e_coef">0.00196749428698667</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n85" target="n246">
+      <data key="e_coef">-0.00379076774222287</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n85" target="n246">
+      <data key="e_coef">-0.00379076774222287</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n86" target="n246">
+      <data key="e_coef">0.0252435789834167</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n86" target="n246">
+      <data key="e_coef">0.0252435789834167</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n132" target="n246">
+      <data key="e_coef">0.00465102197795998</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n132" target="n246">
+      <data key="e_coef">0.00465102197795998</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n168" target="n246">
+      <data key="e_coef">0.00716736916204704</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n169" target="n246">
+      <data key="e_coef">-0.0103273345004052</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n170" target="n246">
+      <data key="e_coef">0.00204943624071923</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n112" target="n246">
+      <data key="e_coef">0.0398188255665961</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n112" target="n246">
+      <data key="e_coef">0.0398188255665961</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n90" target="n246">
+      <data key="e_coef">-0.00184352094495746</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n90" target="n246">
+      <data key="e_coef">-0.00184352094495746</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n91" target="n246">
+      <data key="e_coef">-0.0181978241432945</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n91" target="n246">
+      <data key="e_coef">-0.0181978241432945</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n94" target="n246">
+      <data key="e_coef">0.00339593886385955</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n94" target="n246">
+      <data key="e_coef">0.00339593886385955</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n171" target="n246">
+      <data key="e_coef">-0.00131575581291739</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n135" target="n246">
+      <data key="e_coef">-0.00418439698075065</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n172" target="n246">
+      <data key="e_coef">-0.000981996319867723</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n173" target="n246">
+      <data key="e_coef">0.00356094403084952</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n173" target="n246">
+      <data key="e_coef">0.00356094403084952</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n174" target="n246">
+      <data key="e_coef">-0.00103051262063434</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n174" target="n246">
+      <data key="e_coef">-0.00103051262063434</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n102" target="n246">
+      <data key="e_coef">0.0025762568672484</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n102" target="n246">
+      <data key="e_coef">0.0025762568672484</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n175" target="n246">
+      <data key="e_coef">-0.00132682834913705</data>
+      <data key="e_promoter">chr5:49652565-49657564</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n175" target="n246">
+      <data key="e_coef">-0.00132682834913705</data>
+      <data key="e_promoter">chr5:49651964-49656963</data>
+      <data key="e_mse">0.133078053344858</data>
+      <data key="e_rmse">0.364798647674109</data>
+    </edge>
+    <edge source="n3" target="n247">
+      <data key="e_coef">0.0108486160867875</data>
+      <data key="e_promoter">chr5:64502226-64507225</data>
+      <data key="e_mse">0.654354413697795</data>
+      <data key="e_rmse">0.808921759935901</data>
+    </edge>
+    <edge source="n176" target="n247">
+      <data key="e_coef">0.0131570854210934</data>
+      <data key="e_promoter">chr5:64502226-64507225</data>
+      <data key="e_mse">0.654354413697795</data>
+      <data key="e_rmse">0.808921759935901</data>
+    </edge>
+    <edge source="n22" target="n247">
+      <data key="e_coef">0.0377779324332192</data>
+      <data key="e_promoter">chr5:64502226-64507225</data>
+      <data key="e_mse">0.654354413697795</data>
+      <data key="e_rmse">0.808921759935901</data>
+    </edge>
+    <edge source="n42" target="n247">
+      <data key="e_coef">0.0315856837565336</data>
+      <data key="e_promoter">chr5:64502226-64507225</data>
+      <data key="e_mse">0.654354413697795</data>
+      <data key="e_rmse">0.808921759935901</data>
+    </edge>
+    <edge source="n177" target="n247">
+      <data key="e_coef">0.00333076687885702</data>
+      <data key="e_promoter">chr5:64502226-64507225</data>
+      <data key="e_mse">0.654354413697795</data>
+      <data key="e_rmse">0.808921759935901</data>
+    </edge>
+    <edge source="n45" target="n247">
+      <data key="e_coef">0.0182884471054434</data>
+      <data key="e_promoter">chr5:64502226-64507225</data>
+      <data key="e_mse">0.654354413697795</data>
+      <data key="e_rmse">0.808921759935901</data>
+    </edge>
+    <edge source="n58" target="n247">
+      <data key="e_coef">0.0354092259955375</data>
+      <data key="e_promoter">chr5:64502226-64507225</data>
+      <data key="e_mse">0.654354413697795</data>
+      <data key="e_rmse">0.808921759935901</data>
+    </edge>
+    <edge source="n65" target="n247">
+      <data key="e_coef">0.00928731881675515</data>
+      <data key="e_promoter">chr5:64502226-64507225</data>
+      <data key="e_mse">0.654354413697795</data>
+      <data key="e_rmse">0.808921759935901</data>
+    </edge>
+    <edge source="n178" target="n247">
+      <data key="e_coef">0.00132231959522283</data>
+      <data key="e_promoter">chr5:64502226-64507225</data>
+      <data key="e_mse">0.654354413697795</data>
+      <data key="e_rmse">0.808921759935901</data>
+    </edge>
+    <edge source="n179" target="n247">
+      <data key="e_coef">0.0316948025695697</data>
+      <data key="e_promoter">chr5:64502226-64507225</data>
+      <data key="e_mse">0.654354413697795</data>
+      <data key="e_rmse">0.808921759935901</data>
+    </edge>
+    <edge source="n90" target="n247">
+      <data key="e_coef">0.0264470220330786</data>
+      <data key="e_promoter">chr5:64502226-64507225</data>
+      <data key="e_mse">0.654354413697795</data>
+      <data key="e_rmse">0.808921759935901</data>
+    </edge>
+    <edge source="n1" target="n248">
+      <data key="e_coef">0.0103079490680668</data>
+      <data key="e_promoter">chr10:41903300-41908299</data>
+      <data key="e_mse">0.121276871249574</data>
+      <data key="e_rmse">0.348248289657787</data>
+    </edge>
+    <edge source="n180" target="n248">
+      <data key="e_coef">0.0020600333178703</data>
+      <data key="e_promoter">chr10:41901716-41906715</data>
+      <data key="e_mse">0.121276871249574</data>
+      <data key="e_rmse">0.348248289657787</data>
+    </edge>
+    <edge source="n180" target="n248">
+      <data key="e_coef">0.0020600333178703</data>
+      <data key="e_promoter">chr10:41903300-41908299</data>
+      <data key="e_mse">0.121276871249574</data>
+      <data key="e_rmse">0.348248289657787</data>
+    </edge>
+    <edge source="n19" target="n248">
+      <data key="e_coef">0.00407556100296344</data>
+      <data key="e_promoter">chr10:41901716-41906715</data>
+      <data key="e_mse">0.121276871249574</data>
+      <data key="e_rmse">0.348248289657787</data>
+    </edge>
+    <edge source="n19" target="n248">
+      <data key="e_coef">0.00407556100296344</data>
+      <data key="e_promoter">chr10:41903300-41908299</data>
+      <data key="e_mse">0.121276871249574</data>
+      <data key="e_rmse">0.348248289657787</data>
+    </edge>
+    <edge source="n25" target="n248">
+      <data key="e_coef">0.00917460469982859</data>
+      <data key="e_promoter">chr10:41901716-41906715</data>
+      <data key="e_mse">0.121276871249574</data>
+      <data key="e_rmse">0.348248289657787</data>
+    </edge>
+    <edge source="n25" target="n248">
+      <data key="e_coef">0.00917460469982859</data>
+      <data key="e_promoter">chr10:41903300-41908299</data>
+      <data key="e_mse">0.121276871249574</data>
+      <data key="e_rmse">0.348248289657787</data>
+    </edge>
+    <edge source="n181" target="n248">
+      <data key="e_coef">0.00258518782087983</data>
+      <data key="e_promoter">chr10:41901716-41906715</data>
+      <data key="e_mse">0.121276871249574</data>
+      <data key="e_rmse">0.348248289657787</data>
+    </edge>
+    <edge source="n182" target="n248">
+      <data key="e_coef">0.0239553165583529</data>
+      <data key="e_promoter">chr10:41903300-41908299</data>
+      <data key="e_mse">0.121276871249574</data>
+      <data key="e_rmse">0.348248289657787</data>
+    </edge>
+    <edge source="n55" target="n248">
+      <data key="e_coef">0.00135843741565474</data>
+      <data key="e_promoter">chr10:41901716-41906715</data>
+      <data key="e_mse">0.121276871249574</data>
+      <data key="e_rmse">0.348248289657787</data>
+    </edge>
+    <edge source="n55" target="n248">
+      <data key="e_coef">0.00135843741565474</data>
+      <data key="e_promoter">chr10:41903300-41908299</data>
+      <data key="e_mse">0.121276871249574</data>
+      <data key="e_rmse">0.348248289657787</data>
+    </edge>
+    <edge source="n183" target="n248">
+      <data key="e_coef">0.00726760896997035</data>
+      <data key="e_promoter">chr10:41901716-41906715</data>
+      <data key="e_mse">0.121276871249574</data>
+      <data key="e_rmse">0.348248289657787</data>
+    </edge>
+    <edge source="n184" target="n248">
+      <data key="e_coef">0.000530673634921233</data>
+      <data key="e_promoter">chr10:41901716-41906715</data>
+      <data key="e_mse">0.121276871249574</data>
+      <data key="e_rmse">0.348248289657787</data>
+    </edge>
+    <edge source="n184" target="n248">
+      <data key="e_coef">0.000530673634921233</data>
+      <data key="e_promoter">chr10:41903300-41908299</data>
+      <data key="e_mse">0.121276871249574</data>
+      <data key="e_rmse">0.348248289657787</data>
+    </edge>
+    <edge source="n176" target="n249">
+      <data key="e_coef">0.00600522370986715</data>
+      <data key="e_promoter">chr8:69832005-69835415</data>
+      <data key="e_mse">0.590264208903238</data>
+      <data key="e_rmse">0.768286540883828</data>
+    </edge>
+    <edge source="n19" target="n249">
+      <data key="e_coef">0.0383031038564646</data>
+      <data key="e_promoter">chr8:69832005-69835415</data>
+      <data key="e_mse">0.590264208903238</data>
+      <data key="e_rmse">0.768286540883828</data>
+    </edge>
+    <edge source="n25" target="n249">
+      <data key="e_coef">0.0165760780671522</data>
+      <data key="e_promoter">chr8:69832005-69835415</data>
+      <data key="e_mse">0.590264208903238</data>
+      <data key="e_rmse">0.768286540883828</data>
+    </edge>
+    <edge source="n33" target="n249">
+      <data key="e_coef">0.00709298323369371</data>
+      <data key="e_promoter">chr8:69832005-69835415</data>
+      <data key="e_mse">0.590264208903238</data>
+      <data key="e_rmse">0.768286540883828</data>
+    </edge>
+    <edge source="n42" target="n249">
+      <data key="e_coef">0.0112954725796408</data>
+      <data key="e_promoter">chr8:69832005-69835415</data>
+      <data key="e_mse">0.590264208903238</data>
+      <data key="e_rmse">0.768286540883828</data>
+    </edge>
+    <edge source="n6" target="n250">
+      <data key="e_coef">-0.00995602198684332</data>
+      <data key="e_promoter">chr14:28766212-28767156</data>
+      <data key="e_mse">0.487816302866447</data>
+      <data key="e_rmse">0.698438474646441</data>
+    </edge>
+    <edge source="n11" target="n250">
+      <data key="e_coef">0.00806724824130611</data>
+      <data key="e_promoter">chr14:28766212-28767156</data>
+      <data key="e_mse">0.487816302866447</data>
+      <data key="e_rmse">0.698438474646441</data>
+    </edge>
+    <edge source="n12" target="n250">
+      <data key="e_coef">0.0107271483036935</data>
+      <data key="e_promoter">chr14:28766212-28767156</data>
+      <data key="e_mse">0.487816302866447</data>
+      <data key="e_rmse">0.698438474646441</data>
+    </edge>
+    <edge source="n143" target="n250">
+      <data key="e_coef">0.0262048335831962</data>
+      <data key="e_promoter">chr14:28766212-28767156</data>
+      <data key="e_mse">0.487816302866447</data>
+      <data key="e_rmse">0.698438474646441</data>
+    </edge>
+    <edge source="n14" target="n250">
+      <data key="e_coef">0.0459815006731725</data>
+      <data key="e_promoter">chr14:28766212-28767156</data>
+      <data key="e_mse">0.487816302866447</data>
+      <data key="e_rmse">0.698438474646441</data>
+    </edge>
+    <edge source="n15" target="n250">
+      <data key="e_coef">0.0617412879696044</data>
+      <data key="e_promoter">chr14:28766212-28767156</data>
+      <data key="e_mse">0.487816302866447</data>
+      <data key="e_rmse">0.698438474646441</data>
+    </edge>
+    <edge source="n144" target="n250">
+      <data key="e_coef">0.123384295133465</data>
+      <data key="e_promoter">chr14:28766212-28767156</data>
+      <data key="e_mse">0.487816302866447</data>
+      <data key="e_rmse">0.698438474646441</data>
+    </edge>
+    <edge source="n185" target="n250">
+      <data key="e_coef">0.0092612481986381</data>
+      <data key="e_promoter">chr14:28766212-28767156</data>
+      <data key="e_mse">0.487816302866447</data>
+      <data key="e_rmse">0.698438474646441</data>
+    </edge>
+    <edge source="n20" target="n250">
+      <data key="e_coef">0.174365453536058</data>
+      <data key="e_promoter">chr14:28766212-28767156</data>
+      <data key="e_mse">0.487816302866447</data>
+      <data key="e_rmse">0.698438474646441</data>
+    </edge>
+    <edge source="n21" target="n250">
+      <data key="e_coef">0.00485607126189099</data>
+      <data key="e_promoter">chr14:28766212-28767156</data>
+      <data key="e_mse">0.487816302866447</data>
+      <data key="e_rmse">0.698438474646441</data>
+    </edge>
+    <edge source="n186" target="n250">
+      <data key="e_coef">-0.0137666484434546</data>
+      <data key="e_promoter">chr14:28766212-28767156</data>
+      <data key="e_mse">0.487816302866447</data>
+      <data key="e_rmse">0.698438474646441</data>
+    </edge>
+    <edge source="n35" target="n250">
+      <data key="e_coef">0.111847548087795</data>
+      <data key="e_promoter">chr14:28766212-28767156</data>
+      <data key="e_mse">0.487816302866447</data>
+      <data key="e_rmse">0.698438474646441</data>
+    </edge>
+    <edge source="n187" target="n250">
+      <data key="e_coef">0.0401674584290123</data>
+      <data key="e_promoter">chr14:28766212-28767156</data>
+      <data key="e_mse">0.487816302866447</data>
+      <data key="e_rmse">0.698438474646441</data>
+    </edge>
+    <edge source="n53" target="n250">
+      <data key="e_coef">0.00961671305459872</data>
+      <data key="e_promoter">chr14:28766212-28767156</data>
+      <data key="e_mse">0.487816302866447</data>
+      <data key="e_rmse">0.698438474646441</data>
+    </edge>
+    <edge source="n161" target="n250">
+      <data key="e_coef">0.0105064733254016</data>
+      <data key="e_promoter">chr14:28766212-28767156</data>
+      <data key="e_mse">0.487816302866447</data>
+      <data key="e_rmse">0.698438474646441</data>
+    </edge>
+    <edge source="n188" target="n250">
+      <data key="e_coef">-0.00551196184766815</data>
+      <data key="e_promoter">chr14:28766212-28767156</data>
+      <data key="e_mse">0.487816302866447</data>
+      <data key="e_rmse">0.698438474646441</data>
+    </edge>
+    <edge source="n58" target="n250">
+      <data key="e_coef">0.00595351935957857</data>
+      <data key="e_promoter">chr14:28766212-28767156</data>
+      <data key="e_mse">0.487816302866447</data>
+      <data key="e_rmse">0.698438474646441</data>
+    </edge>
+    <edge source="n60" target="n250">
+      <data key="e_coef">0.01280406310132</data>
+      <data key="e_promoter">chr14:28766212-28767156</data>
+      <data key="e_mse">0.487816302866447</data>
+      <data key="e_rmse">0.698438474646441</data>
+    </edge>
+    <edge source="n64" target="n250">
+      <data key="e_coef">0.11545892013261</data>
+      <data key="e_promoter">chr14:28766212-28767156</data>
+      <data key="e_mse">0.487816302866447</data>
+      <data key="e_rmse">0.698438474646441</data>
+    </edge>
+    <edge source="n65" target="n250">
+      <data key="e_coef">0.0143890590256279</data>
+      <data key="e_promoter">chr14:28766212-28767156</data>
+      <data key="e_mse">0.487816302866447</data>
+      <data key="e_rmse">0.698438474646441</data>
+    </edge>
+    <edge source="n189" target="n250">
+      <data key="e_coef">0.0141703585221723</data>
+      <data key="e_promoter">chr14:28766212-28767156</data>
+      <data key="e_mse">0.487816302866447</data>
+      <data key="e_rmse">0.698438474646441</data>
+    </edge>
+    <edge source="n190" target="n250">
+      <data key="e_coef">0.103710838477012</data>
+      <data key="e_promoter">chr14:28766212-28767156</data>
+      <data key="e_mse">0.487816302866447</data>
+      <data key="e_rmse">0.698438474646441</data>
+    </edge>
+    <edge source="n132" target="n250">
+      <data key="e_coef">0.0194535465487873</data>
+      <data key="e_promoter">chr14:28766212-28767156</data>
+      <data key="e_mse">0.487816302866447</data>
+      <data key="e_rmse">0.698438474646441</data>
+    </edge>
+    <edge source="n191" target="n250">
+      <data key="e_coef">0.0475408628800004</data>
+      <data key="e_promoter">chr14:28766212-28767156</data>
+      <data key="e_mse">0.487816302866447</data>
+      <data key="e_rmse">0.698438474646441</data>
+    </edge>
+    <edge source="n169" target="n250">
+      <data key="e_coef">0.146561278415538</data>
+      <data key="e_promoter">chr14:28766212-28767156</data>
+      <data key="e_mse">0.487816302866447</data>
+      <data key="e_rmse">0.698438474646441</data>
+    </edge>
+    <edge source="n174" target="n250">
+      <data key="e_coef">0.0845063763262341</data>
+      <data key="e_promoter">chr14:28766212-28767156</data>
+      <data key="e_mse">0.487816302866447</data>
+      <data key="e_rmse">0.698438474646441</data>
+    </edge>
+    <edge source="n192" target="n250">
+      <data key="e_coef">0.0131831670002648</data>
+      <data key="e_promoter">chr14:28766212-28767156</data>
+      <data key="e_mse">0.487816302866447</data>
+      <data key="e_rmse">0.698438474646441</data>
+    </edge>
+    <edge source="n106" target="n251">
+      <data key="e_coef">0.0565184651378129</data>
+      <data key="e_promoter">chr12:63667963-63669127</data>
+      <data key="e_mse">0.876828520642254</data>
+      <data key="e_rmse">0.936391222001922</data>
+    </edge>
+    <edge source="n143" target="n251">
+      <data key="e_coef">0.00744701983512453</data>
+      <data key="e_promoter">chr12:63667963-63669127</data>
+      <data key="e_mse">0.876828520642254</data>
+      <data key="e_rmse">0.936391222001922</data>
+    </edge>
+    <edge source="n150" target="n251">
+      <data key="e_coef">0.0529542675103678</data>
+      <data key="e_promoter">chr12:63667963-63669127</data>
+      <data key="e_mse">0.876828520642254</data>
+      <data key="e_rmse">0.936391222001922</data>
+    </edge>
+    <edge source="n152" target="n251">
+      <data key="e_coef">0.00129139461251178</data>
+      <data key="e_promoter">chr12:63667963-63669127</data>
+      <data key="e_mse">0.876828520642254</data>
+      <data key="e_rmse">0.936391222001922</data>
+    </edge>
+    <edge source="n193" target="n251">
+      <data key="e_coef">0.0284529205196953</data>
+      <data key="e_promoter">chr12:63667963-63669127</data>
+      <data key="e_mse">0.876828520642254</data>
+      <data key="e_rmse">0.936391222001922</data>
+    </edge>
+    <edge source="n181" target="n251">
+      <data key="e_coef">0.0722046664231932</data>
+      <data key="e_promoter">chr12:63667963-63669127</data>
+      <data key="e_mse">0.876828520642254</data>
+      <data key="e_rmse">0.936391222001922</data>
+    </edge>
+    <edge source="n45" target="n251">
+      <data key="e_coef">0.0302047902802301</data>
+      <data key="e_promoter">chr12:63667963-63669127</data>
+      <data key="e_mse">0.876828520642254</data>
+      <data key="e_rmse">0.936391222001922</data>
+    </edge>
+    <edge source="n161" target="n251">
+      <data key="e_coef">0.0240824693129248</data>
+      <data key="e_promoter">chr12:63667963-63669127</data>
+      <data key="e_mse">0.876828520642254</data>
+      <data key="e_rmse">0.936391222001922</data>
+    </edge>
+    <edge source="n194" target="n251">
+      <data key="e_coef">0.0135745113943327</data>
+      <data key="e_promoter">chr12:63667963-63669127</data>
+      <data key="e_mse">0.876828520642254</data>
+      <data key="e_rmse">0.936391222001922</data>
+    </edge>
+    <edge source="n178" target="n251">
+      <data key="e_coef">0.0178823830258322</data>
+      <data key="e_promoter">chr12:63667963-63669127</data>
+      <data key="e_mse">0.876828520642254</data>
+      <data key="e_rmse">0.936391222001922</data>
+    </edge>
+    <edge source="n195" target="n251">
+      <data key="e_coef">0.0207561179562425</data>
+      <data key="e_promoter">chr12:63667963-63669127</data>
+      <data key="e_mse">0.876828520642254</data>
+      <data key="e_rmse">0.936391222001922</data>
+    </edge>
+    <edge source="n183" target="n251">
+      <data key="e_coef">0.0171208262844422</data>
+      <data key="e_promoter">chr12:63667963-63669127</data>
+      <data key="e_mse">0.876828520642254</data>
+      <data key="e_rmse">0.936391222001922</data>
+    </edge>
+    <edge source="n77" target="n251">
+      <data key="e_coef">0.115134473337067</data>
+      <data key="e_promoter">chr12:63667963-63669127</data>
+      <data key="e_mse">0.876828520642254</data>
+      <data key="e_rmse">0.936391222001922</data>
+    </edge>
+    <edge source="n5" target="n252">
+      <data key="e_coef">-0.000321708244144757</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n6" target="n252">
+      <data key="e_coef">-1.6802122554261e-05</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n12" target="n252">
+      <data key="e_coef">-0.000336681549399048</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n143" target="n252">
+      <data key="e_coef">8.21744535170067e-05</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n14" target="n252">
+      <data key="e_coef">0.00247019829692457</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n16" target="n252">
+      <data key="e_coef">0.00104078069526967</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n20" target="n252">
+      <data key="e_coef">1.40797346860421e-05</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n24" target="n252">
+      <data key="e_coef">-0.000146469580721822</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n186" target="n252">
+      <data key="e_coef">0.000659666482427681</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n196" target="n252">
+      <data key="e_coef">0.000626832620710063</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n148" target="n252">
+      <data key="e_coef">0.00111469627875587</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n33" target="n252">
+      <data key="e_coef">0.000749655881398456</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n35" target="n252">
+      <data key="e_coef">-0.000213238823588351</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n36" target="n252">
+      <data key="e_coef">-7.69928915987255e-05</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n37" target="n252">
+      <data key="e_coef">2.98847825930719e-05</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n38" target="n252">
+      <data key="e_coef">-9.64536249754574e-05</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n153" target="n252">
+      <data key="e_coef">-0.000306093657256334</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n120" target="n252">
+      <data key="e_coef">-0.000229509238960351</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n155" target="n252">
+      <data key="e_coef">-2.32625369078436e-05</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n157" target="n252">
+      <data key="e_coef">-0.000762904438055415</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n45" target="n252">
+      <data key="e_coef">0.000725856321287233</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n197" target="n252">
+      <data key="e_coef">-0.000158809318421237</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n48" target="n252">
+      <data key="e_coef">-6.34213975885935e-05</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n160" target="n252">
+      <data key="e_coef">-5.02714187002941e-05</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n54" target="n252">
+      <data key="e_coef">-9.8315694275283e-05</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n122" target="n252">
+      <data key="e_coef">4.31026373213728e-05</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n161" target="n252">
+      <data key="e_coef">-0.00104391003296916</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n162" target="n252">
+      <data key="e_coef">-0.000458988885190394</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n163" target="n252">
+      <data key="e_coef">0.000265873372211316</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n59" target="n252">
+      <data key="e_coef">0.00088128233057415</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n60" target="n252">
+      <data key="e_coef">-0.000445334898135322</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n61" target="n252">
+      <data key="e_coef">0.000368690403513163</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n62" target="n252">
+      <data key="e_coef">0.000827547146932979</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n65" target="n252">
+      <data key="e_coef">-0.000161611310190983</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n198" target="n252">
+      <data key="e_coef">-1.55920380835676e-05</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n67" target="n252">
+      <data key="e_coef">0.00248704746388512</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n70" target="n252">
+      <data key="e_coef">0.000556566825767064</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n189" target="n252">
+      <data key="e_coef">0.00317568987705478</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n71" target="n252">
+      <data key="e_coef">0.000251640610554822</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n74" target="n252">
+      <data key="e_coef">-4.75143504642013e-05</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n77" target="n252">
+      <data key="e_coef">0.000532902793636506</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n129" target="n252">
+      <data key="e_coef">0.000413392949207269</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n82" target="n252">
+      <data key="e_coef">0.000461953795050551</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n131" target="n252">
+      <data key="e_coef">-0.000489441219114247</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n84" target="n252">
+      <data key="e_coef">-0.000986064045593608</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n85" target="n252">
+      <data key="e_coef">0.000135585608704919</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n86" target="n252">
+      <data key="e_coef">4.77411569951518e-05</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n111" target="n252">
+      <data key="e_coef">0.000752136129170377</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n184" target="n252">
+      <data key="e_coef">-0.000893979319606505</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n132" target="n252">
+      <data key="e_coef">-0.000210368374571741</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n191" target="n252">
+      <data key="e_coef">0.000247947421256331</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n199" target="n252">
+      <data key="e_coef">0.00104521206450186</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n88" target="n252">
+      <data key="e_coef">0.000803560024517138</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n169" target="n252">
+      <data key="e_coef">-0.000635045350262909</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n89" target="n252">
+      <data key="e_coef">0.000191154110440388</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n91" target="n252">
+      <data key="e_coef">0.000287706420431794</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n200" target="n252">
+      <data key="e_coef">0.000385082268169233</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n94" target="n252">
+      <data key="e_coef">-5.82391189688828e-05</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n97" target="n252">
+      <data key="e_coef">-0.000147199036041258</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n172" target="n252">
+      <data key="e_coef">-1.94855241174605e-05</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n98" target="n252">
+      <data key="e_coef">-4.91976252279762e-05</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n201" target="n252">
+      <data key="e_coef">-0.00011969166414748</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n102" target="n252">
+      <data key="e_coef">-6.0609360166831e-05</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n105" target="n252">
+      <data key="e_coef">-3.84623318246509e-05</data>
+      <data key="e_promoter">chr18:24014020-24015760</data>
+      <data key="e_mse">0.0107806186539409</data>
+      <data key="e_rmse">0.10382975803661</data>
+    </edge>
+    <edge source="n6" target="n253">
+      <data key="e_coef">6.33059715852038e-06</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n8" target="n253">
+      <data key="e_coef">1.01976996249153e-06</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n11" target="n253">
+      <data key="e_coef">3.63603000945926e-05</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n202" target="n253">
+      <data key="e_coef">-2.78326539709782e-07</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n203" target="n253">
+      <data key="e_coef">2.63321925421127e-05</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n143" target="n253">
+      <data key="e_coef">2.68693063142621e-05</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n14" target="n253">
+      <data key="e_coef">3.82936948407089e-05</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n15" target="n253">
+      <data key="e_coef">-9.08053394584404e-07</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n17" target="n253">
+      <data key="e_coef">5.18259670392101e-05</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n204" target="n253">
+      <data key="e_coef">-2.34070823117033e-06</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n20" target="n253">
+      <data key="e_coef">-7.07714862718485e-06</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n21" target="n253">
+      <data key="e_coef">0.000152405868504799</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n24" target="n253">
+      <data key="e_coef">-2.65516898235771e-07</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n186" target="n253">
+      <data key="e_coef">-3.20114420157864e-06</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n26" target="n253">
+      <data key="e_coef">-2.82221044163421e-07</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n33" target="n253">
+      <data key="e_coef">2.47237112395098e-05</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n205" target="n253">
+      <data key="e_coef">2.58554109968909e-06</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n36" target="n253">
+      <data key="e_coef">5.56586418273197e-06</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n37" target="n253">
+      <data key="e_coef">5.58585731138941e-06</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n187" target="n253">
+      <data key="e_coef">3.68784143184909e-05</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n40" target="n253">
+      <data key="e_coef">-3.70620032319743e-07</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n156" target="n253">
+      <data key="e_coef">1.24689432536405e-05</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n206" target="n253">
+      <data key="e_coef">6.32336989194389e-06</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n43" target="n253">
+      <data key="e_coef">-4.43662405126663e-06</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n207" target="n253">
+      <data key="e_coef">-1.87957971403833e-06</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n45" target="n253">
+      <data key="e_coef">1.09514829629532e-05</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n48" target="n253">
+      <data key="e_coef">8.46113605768466e-06</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n51" target="n253">
+      <data key="e_coef">1.23369376499615e-05</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n52" target="n253">
+      <data key="e_coef">-1.44613015660701e-06</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n54" target="n253">
+      <data key="e_coef">-5.46270753538879e-07</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n208" target="n253">
+      <data key="e_coef">-2.26406383132214e-06</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n188" target="n253">
+      <data key="e_coef">0.000179434804867528</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n58" target="n253">
+      <data key="e_coef">5.94747243771936e-05</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n61" target="n253">
+      <data key="e_coef">-3.77702365632977e-07</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n62" target="n253">
+      <data key="e_coef">-2.7853603445157e-06</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n63" target="n253">
+      <data key="e_coef">2.61088046539739e-06</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n166" target="n253">
+      <data key="e_coef">2.08141076387562e-06</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n65" target="n253">
+      <data key="e_coef">-1.13729145904603e-05</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n198" target="n253">
+      <data key="e_coef">-1.14142092441172e-07</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n70" target="n253">
+      <data key="e_coef">-3.10756715193485e-06</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n189" target="n253">
+      <data key="e_coef">-1.18170002010299e-05</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n71" target="n253">
+      <data key="e_coef">-7.51264088192767e-07</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n73" target="n253">
+      <data key="e_coef">-4.44765858222595e-06</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n74" target="n253">
+      <data key="e_coef">0.000246352518408871</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n209" target="n253">
+      <data key="e_coef">1.03224855594509e-06</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n210" target="n253">
+      <data key="e_coef">-5.21464538365496e-06</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n190" target="n253">
+      <data key="e_coef">9.9517993376498e-06</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n211" target="n253">
+      <data key="e_coef">8.1477431571917e-06</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n81" target="n253">
+      <data key="e_coef">-5.92396845321264e-06</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n82" target="n253">
+      <data key="e_coef">-1.10939442892978e-06</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n131" target="n253">
+      <data key="e_coef">-2.58975106727707e-06</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n83" target="n253">
+      <data key="e_coef">2.8818099313469e-06</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n212" target="n253">
+      <data key="e_coef">1.36363902204797e-07</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n213" target="n253">
+      <data key="e_coef">-2.37216175305436e-06</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n214" target="n253">
+      <data key="e_coef">1.741135682198e-07</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n199" target="n253">
+      <data key="e_coef">-6.81542313650994e-06</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n169" target="n253">
+      <data key="e_coef">1.58312817239049e-06</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n89" target="n253">
+      <data key="e_coef">-1.57821658183409e-07</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n94" target="n253">
+      <data key="e_coef">-3.4859391906701e-07</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n96" target="n253">
+      <data key="e_coef">5.28776360038148e-06</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n215" target="n253">
+      <data key="e_coef">-2.11130066086781e-07</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n216" target="n253">
+      <data key="e_coef">-8.86672833085222e-08</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n217" target="n253">
+      <data key="e_coef">-2.71578565762745e-07</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n105" target="n253">
+      <data key="e_coef">-1.21982207783413e-07</data>
+      <data key="e_promoter">chr4:41256368-41257620</data>
+      <data key="e_mse">0.00393309539057521</data>
+      <data key="e_rmse">0.0627143954014962</data>
+    </edge>
+    <edge source="n4" target="n254">
+      <data key="e_coef">0.0271590234431226</data>
+      <data key="e_promoter">chr6:3225630-3228189</data>
+      <data key="e_mse">0.41754781776089</data>
+      <data key="e_rmse">0.646179400600863</data>
+    </edge>
+    <edge source="n5" target="n254">
+      <data key="e_coef">-0.00606242769773277</data>
+      <data key="e_promoter">chr6:3225630-3228189</data>
+      <data key="e_mse">0.41754781776089</data>
+      <data key="e_rmse">0.646179400600863</data>
+    </edge>
+    <edge source="n6" target="n254">
+      <data key="e_coef">0.0668924977581856</data>
+      <data key="e_promoter">chr6:3225630-3228189</data>
+      <data key="e_mse">0.41754781776089</data>
+      <data key="e_rmse">0.646179400600863</data>
+    </edge>
+    <edge source="n7" target="n254">
+      <data key="e_coef">0.0668308692076309</data>
+      <data key="e_promoter">chr6:3225630-3228189</data>
+      <data key="e_mse">0.41754781776089</data>
+      <data key="e_rmse">0.646179400600863</data>
+    </edge>
+    <edge source="n11" target="n254">
+      <data key="e_coef">-0.000652485521557591</data>
+      <data key="e_promoter">chr6:3225630-3228189</data>
+      <data key="e_mse">0.41754781776089</data>
+      <data key="e_rmse">0.646179400600863</data>
+    </edge>
+    <edge source="n106" target="n254">
+      <data key="e_coef">0.0302110288909417</data>
+      <data key="e_promoter">chr6:3225630-3228189</data>
+      <data key="e_mse">0.41754781776089</data>
+      <data key="e_rmse">0.646179400600863</data>
+    </edge>
+    <edge source="n176" target="n254">
+      <data key="e_coef">0.000101752501591411</data>
+      <data key="e_promoter">chr6:3225630-3228189</data>
+      <data key="e_mse">0.41754781776089</data>
+      <data key="e_rmse">0.646179400600863</data>
+    </edge>
+    <edge source="n14" target="n254">
+      <data key="e_coef">0.0087572741721696</data>
+      <data key="e_promoter">chr6:3225630-3228189</data>
+      <data key="e_mse">0.41754781776089</data>
+      <data key="e_rmse">0.646179400600863</data>
+    </edge>
+    <edge source="n16" target="n254">
+      <data key="e_coef">0.0878405167083052</data>
+      <data key="e_promoter">chr6:3225630-3228189</data>
+      <data key="e_mse">0.41754781776089</data>
+      <data key="e_rmse">0.646179400600863</data>
+    </edge>
+    <edge source="n28" target="n254">
+      <data key="e_coef">0.0283032695684177</data>
+      <data key="e_promoter">chr6:3225630-3228189</data>
+      <data key="e_mse">0.41754781776089</data>
+      <data key="e_rmse">0.646179400600863</data>
+    </edge>
+    <edge source="n53" target="n254">
+      <data key="e_coef">0.00806250598243725</data>
+      <data key="e_promoter">chr6:3225630-3228189</data>
+      <data key="e_mse">0.41754781776089</data>
+      <data key="e_rmse">0.646179400600863</data>
+    </edge>
+    <edge source="n218" target="n254">
+      <data key="e_coef">0.0179402371943188</data>
+      <data key="e_promoter">chr6:3225630-3228189</data>
+      <data key="e_mse">0.41754781776089</data>
+      <data key="e_rmse">0.646179400600863</data>
+    </edge>
+    <edge source="n194" target="n254">
+      <data key="e_coef">0.000983929300594945</data>
+      <data key="e_promoter">chr6:3225630-3228189</data>
+      <data key="e_mse">0.41754781776089</data>
+      <data key="e_rmse">0.646179400600863</data>
+    </edge>
+    <edge source="n62" target="n254">
+      <data key="e_coef">0.0301539798733093</data>
+      <data key="e_promoter">chr6:3225630-3228189</data>
+      <data key="e_mse">0.41754781776089</data>
+      <data key="e_rmse">0.646179400600863</data>
+    </edge>
+    <edge source="n68" target="n254">
+      <data key="e_coef">-0.0116997979098913</data>
+      <data key="e_promoter">chr6:3225630-3228189</data>
+      <data key="e_mse">0.41754781776089</data>
+      <data key="e_rmse">0.646179400600863</data>
+    </edge>
+    <edge source="n73" target="n254">
+      <data key="e_coef">0.0668699179358562</data>
+      <data key="e_promoter">chr6:3225630-3228189</data>
+      <data key="e_mse">0.41754781776089</data>
+      <data key="e_rmse">0.646179400600863</data>
+    </edge>
+    <edge source="n195" target="n254">
+      <data key="e_coef">0.0230639452661037</data>
+      <data key="e_promoter">chr6:3225630-3228189</data>
+      <data key="e_mse">0.41754781776089</data>
+      <data key="e_rmse">0.646179400600863</data>
+    </edge>
+    <edge source="n219" target="n254">
+      <data key="e_coef">0.0876778092456103</data>
+      <data key="e_promoter">chr6:3225630-3228189</data>
+      <data key="e_mse">0.41754781776089</data>
+      <data key="e_rmse">0.646179400600863</data>
+    </edge>
+    <edge source="n77" target="n254">
+      <data key="e_coef">0.00630548844634231</data>
+      <data key="e_promoter">chr6:3225630-3228189</data>
+      <data key="e_mse">0.41754781776089</data>
+      <data key="e_rmse">0.646179400600863</data>
+    </edge>
+    <edge source="n184" target="n254">
+      <data key="e_coef">0.0028344367528218</data>
+      <data key="e_promoter">chr6:3225630-3228189</data>
+      <data key="e_mse">0.41754781776089</data>
+      <data key="e_rmse">0.646179400600863</data>
+    </edge>
+    <edge source="n97" target="n254">
+      <data key="e_coef">0.0599542653977198</data>
+      <data key="e_promoter">chr6:3225630-3228189</data>
+      <data key="e_mse">0.41754781776089</data>
+      <data key="e_rmse">0.646179400600863</data>
+    </edge>
+    <edge source="n101" target="n254">
+      <data key="e_coef">0.0977881930461073</data>
+      <data key="e_promoter">chr6:3225630-3228189</data>
+      <data key="e_mse">0.41754781776089</data>
+      <data key="e_rmse">0.646179400600863</data>
+    </edge>
+    <edge source="n6" target="n255">
+      <data key="e_coef">0.000164605794517393</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n176" target="n255">
+      <data key="e_coef">-0.00223192287677937</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n14" target="n255">
+      <data key="e_coef">0.00270889053454999</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n144" target="n255">
+      <data key="e_coef">-0.000312735159757027</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n147" target="n255">
+      <data key="e_coef">0.000823764971693846</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n20" target="n255">
+      <data key="e_coef">0.00380894806427236</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n22" target="n255">
+      <data key="e_coef">0.00196058347415156</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n186" target="n255">
+      <data key="e_coef">0.000416379671380788</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n26" target="n255">
+      <data key="e_coef">-0.000299229289603014</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n35" target="n255">
+      <data key="e_coef">-0.000382859228712425</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n38" target="n255">
+      <data key="e_coef">0.000553604853397779</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n153" target="n255">
+      <data key="e_coef">0.000116138018162246</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n156" target="n255">
+      <data key="e_coef">0.00426087591154486</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n181" target="n255">
+      <data key="e_coef">0.00276006969353536</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n45" target="n255">
+      <data key="e_coef">0.000904047060730691</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n48" target="n255">
+      <data key="e_coef">-0.000230554823812525</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n159" target="n255">
+      <data key="e_coef">0.000558083011083562</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n160" target="n255">
+      <data key="e_coef">0.000144333230432949</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n220" target="n255">
+      <data key="e_coef">0.000308982406955302</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n161" target="n255">
+      <data key="e_coef">0.00186124440743204</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n162" target="n255">
+      <data key="e_coef">-0.000729725320715716</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n221" target="n255">
+      <data key="e_coef">-0.000740866581456069</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n60" target="n255">
+      <data key="e_coef">0.00314552124005112</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n62" target="n255">
+      <data key="e_coef">-0.000545348448892501</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n64" target="n255">
+      <data key="e_coef">-0.00174943783568405</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n69" target="n255">
+      <data key="e_coef">-0.000136367652879982</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n109" target="n255">
+      <data key="e_coef">-0.00304957763460337</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n178" target="n255">
+      <data key="e_coef">0.00069722080645628</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n195" target="n255">
+      <data key="e_coef">0.0013901937494365</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n75" target="n255">
+      <data key="e_coef">0.000194110351790289</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n179" target="n255">
+      <data key="e_coef">0.00310444184238917</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n183" target="n255">
+      <data key="e_coef">-0.00102819895853423</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n78" target="n255">
+      <data key="e_coef">0.00527100455140202</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n129" target="n255">
+      <data key="e_coef">-0.000164378077327926</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n222" target="n255">
+      <data key="e_coef">0.000448868443110785</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n110" target="n255">
+      <data key="e_coef">0.00454162951965514</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n81" target="n255">
+      <data key="e_coef">0.00133565951794046</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n82" target="n255">
+      <data key="e_coef">0.000306779841791012</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n131" target="n255">
+      <data key="e_coef">-0.000347112294699118</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n85" target="n255">
+      <data key="e_coef">0.000871874246271622</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n86" target="n255">
+      <data key="e_coef">0.00014722808220425</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n168" target="n255">
+      <data key="e_coef">-0.000372804071734077</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n223" target="n255">
+      <data key="e_coef">-5.73884841324329e-05</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n191" target="n255">
+      <data key="e_coef">0.0027577913427812</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n169" target="n255">
+      <data key="e_coef">0.000206845841290233</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n112" target="n255">
+      <data key="e_coef">0.000119951793236625</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n91" target="n255">
+      <data key="e_coef">0.00245652746692472</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n224" target="n255">
+      <data key="e_coef">0.000536697647841379</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n200" target="n255">
+      <data key="e_coef">0.00175487457041451</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n225" target="n255">
+      <data key="e_coef">-7.85524169550333e-05</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n94" target="n255">
+      <data key="e_coef">0.000646074964648537</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n135" target="n255">
+      <data key="e_coef">0.00349252734234657</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n136" target="n255">
+      <data key="e_coef">0.000424158445021862</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n216" target="n255">
+      <data key="e_coef">-0.00012414782872707</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n98" target="n255">
+      <data key="e_coef">0.000699344990339131</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n226" target="n255">
+      <data key="e_coef">0.000717476232955604</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n174" target="n255">
+      <data key="e_coef">0.00307950456472936</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n102" target="n255">
+      <data key="e_coef">-0.000191427861510164</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n227" target="n255">
+      <data key="e_coef">-0.000159850012931153</data>
+      <data key="e_promoter">chr8:119415866-119417231</data>
+      <data key="e_mse">0.019504368243116</data>
+      <data key="e_rmse">0.139658040381197</data>
+    </edge>
+    <edge source="n228" target="n256">
+      <data key="e_coef">0.00245288434863509</data>
+      <data key="e_promoter">chr5:115816221-115817138</data>
+      <data key="e_mse">0.1067692633554</data>
+      <data key="e_rmse">0.326755663080841</data>
+    </edge>
+    <edge source="n229" target="n256">
+      <data key="e_coef">0.00867245124889363</data>
+      <data key="e_promoter">chr5:115816221-115817138</data>
+      <data key="e_mse">0.1067692633554</data>
+      <data key="e_rmse">0.326755663080841</data>
+    </edge>
+    <edge source="n12" target="n256">
+      <data key="e_coef">0.0018359348466112</data>
+      <data key="e_promoter">chr5:115816221-115817138</data>
+      <data key="e_mse">0.1067692633554</data>
+      <data key="e_rmse">0.326755663080841</data>
+    </edge>
+    <edge source="n142" target="n256">
+      <data key="e_coef">0.00557473345806487</data>
+      <data key="e_promoter">chr5:115816221-115817138</data>
+      <data key="e_mse">0.1067692633554</data>
+      <data key="e_rmse">0.326755663080841</data>
+    </edge>
+    <edge source="n230" target="n256">
+      <data key="e_coef">0.00579624409202831</data>
+      <data key="e_promoter">chr5:115816221-115817138</data>
+      <data key="e_mse">0.1067692633554</data>
+      <data key="e_rmse">0.326755663080841</data>
+    </edge>
+    <edge source="n18" target="n256">
+      <data key="e_coef">9.82465969438932e-05</data>
+      <data key="e_promoter">chr5:115816221-115817138</data>
+      <data key="e_mse">0.1067692633554</data>
+      <data key="e_rmse">0.326755663080841</data>
+    </edge>
+    <edge source="n24" target="n256">
+      <data key="e_coef">0.00120681047873922</data>
+      <data key="e_promoter">chr5:115816221-115817138</data>
+      <data key="e_mse">0.1067692633554</data>
+      <data key="e_rmse">0.326755663080841</data>
+    </edge>
+    <edge source="n231" target="n256">
+      <data key="e_coef">0.00136349096688017</data>
+      <data key="e_promoter">chr5:115816221-115817138</data>
+      <data key="e_mse">0.1067692633554</data>
+      <data key="e_rmse">0.326755663080841</data>
+    </edge>
+    <edge source="n232" target="n256">
+      <data key="e_coef">0.000558065292121501</data>
+      <data key="e_promoter">chr5:115816221-115817138</data>
+      <data key="e_mse">0.1067692633554</data>
+      <data key="e_rmse">0.326755663080841</data>
+    </edge>
+    <edge source="n153" target="n256">
+      <data key="e_coef">0.00568038630254351</data>
+      <data key="e_promoter">chr5:115816221-115817138</data>
+      <data key="e_mse">0.1067692633554</data>
+      <data key="e_rmse">0.326755663080841</data>
+    </edge>
+    <edge source="n44" target="n256">
+      <data key="e_coef">-0.0018319233361357</data>
+      <data key="e_promoter">chr5:115816221-115817138</data>
+      <data key="e_mse">0.1067692633554</data>
+      <data key="e_rmse">0.326755663080841</data>
+    </edge>
+    <edge source="n46" target="n256">
+      <data key="e_coef">0.010977686545256</data>
+      <data key="e_promoter">chr5:115816221-115817138</data>
+      <data key="e_mse">0.1067692633554</data>
+      <data key="e_rmse">0.326755663080841</data>
+    </edge>
+    <edge source="n47" target="n256">
+      <data key="e_coef">0.00448857778902368</data>
+      <data key="e_promoter">chr5:115816221-115817138</data>
+      <data key="e_mse">0.1067692633554</data>
+      <data key="e_rmse">0.326755663080841</data>
+    </edge>
+    <edge source="n48" target="n256">
+      <data key="e_coef">0.000313193174173044</data>
+      <data key="e_promoter">chr5:115816221-115817138</data>
+      <data key="e_mse">0.1067692633554</data>
+      <data key="e_rmse">0.326755663080841</data>
+    </edge>
+    <edge source="n52" target="n256">
+      <data key="e_coef">0.000976502665058265</data>
+      <data key="e_promoter">chr5:115816221-115817138</data>
+      <data key="e_mse">0.1067692633554</data>
+      <data key="e_rmse">0.326755663080841</data>
+    </edge>
+    <edge source="n233" target="n256">
+      <data key="e_coef">0.00643841750889132</data>
+      <data key="e_promoter">chr5:115816221-115817138</data>
+      <data key="e_mse">0.1067692633554</data>
+      <data key="e_rmse">0.326755663080841</data>
+    </edge>
+    <edge source="n53" target="n256">
+      <data key="e_coef">0.00397230052668167</data>
+      <data key="e_promoter">chr5:115816221-115817138</data>
+      <data key="e_mse">0.1067692633554</data>
+      <data key="e_rmse">0.326755663080841</data>
+    </edge>
+    <edge source="n234" target="n256">
+      <data key="e_coef">0.000293222738804206</data>
+      <data key="e_promoter">chr5:115816221-115817138</data>
+      <data key="e_mse">0.1067692633554</data>
+      <data key="e_rmse">0.326755663080841</data>
+    </edge>
+    <edge source="n235" target="n256">
+      <data key="e_coef">0.00409554223573354</data>
+      <data key="e_promoter">chr5:115816221-115817138</data>
+      <data key="e_mse">0.1067692633554</data>
+      <data key="e_rmse">0.326755663080841</data>
+    </edge>
+    <edge source="n221" target="n256">
+      <data key="e_coef">0.0019692671245388</data>
+      <data key="e_promoter">chr5:115816221-115817138</data>
+      <data key="e_mse">0.1067692633554</data>
+      <data key="e_rmse">0.326755663080841</data>
+    </edge>
+    <edge source="n60" target="n256">
+      <data key="e_coef">0.000529628361407868</data>
+      <data key="e_promoter">chr5:115816221-115817138</data>
+      <data key="e_mse">0.1067692633554</data>
+      <data key="e_rmse">0.326755663080841</data>
+    </edge>
+    <edge source="n63" target="n256">
+      <data key="e_coef">0.00271362216418373</data>
+      <data key="e_promoter">chr5:115816221-115817138</data>
+      <data key="e_mse">0.1067692633554</data>
+      <data key="e_rmse">0.326755663080841</data>
+    </edge>
+    <edge source="n65" target="n256">
+      <data key="e_coef">-0.000108926619062574</data>
+      <data key="e_promoter">chr5:115816221-115817138</data>
+      <data key="e_mse">0.1067692633554</data>
+      <data key="e_rmse">0.326755663080841</data>
+    </edge>
+    <edge source="n70" target="n256">
+      <data key="e_coef">0.00110067798187431</data>
+      <data key="e_promoter">chr5:115816221-115817138</data>
+      <data key="e_mse">0.1067692633554</data>
+      <data key="e_rmse">0.326755663080841</data>
+    </edge>
+    <edge source="n71" target="n256">
+      <data key="e_coef">0.000756863141866267</data>
+      <data key="e_promoter">chr5:115816221-115817138</data>
+      <data key="e_mse">0.1067692633554</data>
+      <data key="e_rmse">0.326755663080841</data>
+    </edge>
+    <edge source="n190" target="n256">
+      <data key="e_coef">0.00115586060119189</data>
+      <data key="e_promoter">chr5:115816221-115817138</data>
+      <data key="e_mse">0.1067692633554</data>
+      <data key="e_rmse">0.326755663080841</data>
+    </edge>
+    <edge source="n219" target="n256">
+      <data key="e_coef">0.00772488063166273</data>
+      <data key="e_promoter">chr5:115816221-115817138</data>
+      <data key="e_mse">0.1067692633554</data>
+      <data key="e_rmse">0.326755663080841</data>
+    </edge>
+    <edge source="n82" target="n256">
+      <data key="e_coef">0.000492799635783427</data>
+      <data key="e_promoter">chr5:115816221-115817138</data>
+      <data key="e_mse">0.1067692633554</data>
+      <data key="e_rmse">0.326755663080841</data>
+    </edge>
+    <edge source="n184" target="n256">
+      <data key="e_coef">0.00253793502661026</data>
+      <data key="e_promoter">chr5:115816221-115817138</data>
+      <data key="e_mse">0.1067692633554</data>
+      <data key="e_rmse">0.326755663080841</data>
+    </edge>
+    <edge source="n87" target="n256">
+      <data key="e_coef">0.0043742194247662</data>
+      <data key="e_promoter">chr5:115816221-115817138</data>
+      <data key="e_mse">0.1067692633554</data>
+      <data key="e_rmse">0.326755663080841</data>
+    </edge>
+    <edge source="n236" target="n256">
+      <data key="e_coef">0.00698072833307412</data>
+      <data key="e_promoter">chr5:115816221-115817138</data>
+      <data key="e_mse">0.1067692633554</data>
+      <data key="e_rmse">0.326755663080841</data>
+    </edge>
+    <edge source="n237" target="n256">
+      <data key="e_coef">0.000985918978440939</data>
+      <data key="e_promoter">chr5:115816221-115817138</data>
+      <data key="e_mse">0.1067692633554</data>
+      <data key="e_rmse">0.326755663080841</data>
+    </edge>
+    <edge source="n238" target="n256">
+      <data key="e_coef">0.00278484516299463</data>
+      <data key="e_promoter">chr5:115816221-115817138</data>
+      <data key="e_mse">0.1067692633554</data>
+      <data key="e_rmse">0.326755663080841</data>
+    </edge>
+    <edge source="n90" target="n256">
+      <data key="e_coef">0.0129840985828358</data>
+      <data key="e_promoter">chr5:115816221-115817138</data>
+      <data key="e_mse">0.1067692633554</data>
+      <data key="e_rmse">0.326755663080841</data>
+    </edge>
+    <edge source="n239" target="n256">
+      <data key="e_coef">0.000466146684732668</data>
+      <data key="e_promoter">chr5:115816221-115817138</data>
+      <data key="e_mse">0.1067692633554</data>
+      <data key="e_rmse">0.326755663080841</data>
+    </edge>
+    <edge source="n94" target="n256">
+      <data key="e_coef">0.000969931025817948</data>
+      <data key="e_promoter">chr5:115816221-115817138</data>
+      <data key="e_mse">0.1067692633554</data>
+      <data key="e_rmse">0.326755663080841</data>
+    </edge>
+    <edge source="n240" target="n256">
+      <data key="e_coef">0.000368892286296684</data>
+      <data key="e_promoter">chr5:115816221-115817138</data>
+      <data key="e_mse">0.1067692633554</data>
+      <data key="e_rmse">0.326755663080841</data>
+    </edge>
+    <edge source="n137" target="n256">
+      <data key="e_coef">0.000290779730180053</data>
+      <data key="e_promoter">chr5:115816221-115817138</data>
+      <data key="e_mse">0.1067692633554</data>
+      <data key="e_rmse">0.326755663080841</data>
+    </edge>
+    <edge source="n101" target="n256">
+      <data key="e_coef">0.000941347288968572</data>
+      <data key="e_promoter">chr5:115816221-115817138</data>
+      <data key="e_mse">0.1067692633554</data>
+      <data key="e_rmse">0.326755663080841</data>
+    </edge>
+    <edge source="n241" target="n256">
+      <data key="e_coef">-0.000129229884746258</data>
+      <data key="e_promoter">chr5:115816221-115817138</data>
+      <data key="e_mse">0.1067692633554</data>
+      <data key="e_rmse">0.326755663080841</data>
+    </edge>
+    <edge source="n242" target="n256">
+      <data key="e_coef">0.000159478530182203</data>
+      <data key="e_promoter">chr5:115816221-115817138</data>
+      <data key="e_mse">0.1067692633554</data>
+      <data key="e_rmse">0.326755663080841</data>
+    </edge>
+  </graph>
+</graphml>

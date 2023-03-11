@@ -1,0 +1,2 @@
+load("/Users/erickCuevas/Documents/GitProyects/GRN_atac/new_anotation_SFG_withoutCNB.rds")
+load("/Users/erickCuevas/Documents/GitProyects/GRN_atac/promoters_TF_TABLE.rds")
