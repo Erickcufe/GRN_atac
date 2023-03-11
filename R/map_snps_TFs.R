@@ -98,6 +98,16 @@ results_snps_rorb <- purrr::map(list_positions, search_motifBreak)
 save(results_snps_rorb, file = "RORB/posciones_snps_motifbreak.rda")
 
 
+##################################
+## Posiciones claves de Ex
+##################################
+
+chr1_53738678_53739782 <- snpsByOverlaps(snps_ids, GRanges("1:53738678-53739782"))
+chr1_53738678_53739782 <- data.frame(chr1_53738678_53739782)
+
+
+
+
 
 ids <- prueba$RefSNP_id
 
