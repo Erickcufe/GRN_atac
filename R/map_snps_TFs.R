@@ -47,8 +47,9 @@ search_overlap <- function(net){
 
 }
 
-
+##################################
 ## Posiciones claves de RORB+
+##################################
 
 chr4_174828789_174829804 <- snpsByOverlaps(snps_ids, GRanges("4:174828789-174829804"))
 chr4_174828789_174829804 <- data.frame(chr4_174828789_174829804)
@@ -70,18 +71,35 @@ chr1_159141438_159142463 <- data.frame(chr1_159141438_159142463)
 
 library(motifbreakR)
 
+search_motifBreak <- function(ids){
+  snps.mb <- motifbreakR::snps.from.rsid(rsid = ids,
+                                         dbSNP = SNPlocs.Hsapiens.dbSNP155.GRCh38::SNPlocs.Hsapiens.dbSNP155.GRCh38,
+                                         search.genome = BSgenome.Hsapiens.UCSC.hg38::BSgenome.Hsapiens.UCSC.hg38)
+
+  data(motifbreakR_motif)
+  results <- motifbreakR::motifbreakR(snpList = snps.mb, filterp = TRUE,
+                                      pwmList = motifbreakR_motif,
+                                      threshold = 1e-4,
+                                      method = "ic",
+                                      BPPARAM = BiocParallel::MulticoreParam(6))
+
+  return(results)
+}
+
+list_positions <- list(chr1_159141438_159142463 = chr1_159141438_159142463$RefSNP_id,
+                       chr5_49651964_49656963 = chr5_49651964_49656963$RefSNP_id,
+                       chr5_50440539_50441773 = chr5_50440539_50441773$RefSNP_id,
+                       chr5_114361595_114362564 = chr5_114361595_114362564$RefSNP_id,
+                       chr13_61414782_61415825 = chr13_61414782_61415825$RefSNP_id,
+                       chr4_174828789_174829804 = chr4_174828789_174829804$RefSNP_id)
+
+results_snps_rorb <- purrr::map(list_positions, search_motifBreak)
+
+save(results_snps_rorb, file = "RORB/posciones_snps_motifbreak.rda")
+
+
+
 ids <- prueba$RefSNP_id
-snps.mb <- motifbreakR::snps.from.rsid(rsid = ids,
-                                       dbSNP = SNPlocs.Hsapiens.dbSNP155.GRCh38::SNPlocs.Hsapiens.dbSNP155.GRCh38,
-                                       search.genome = BSgenome.Hsapiens.UCSC.hg38::BSgenome.Hsapiens.UCSC.hg38)
-
-data(motifbreakR_motif)
-results <- motifbreakR::motifbreakR(snpList = snps.mb, filterp = TRUE,
-                                    pwmList = motifbreakR_motif,
-                                    threshold = 1e-4,
-                                    method = "ic",
-                                    BPPARAM = BiocParallel::MulticoreParam(6))
-
 
 
 
