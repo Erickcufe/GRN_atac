@@ -85,6 +85,10 @@ atac_non_vip <- readr::read_csv("atac_cellType_markers/Non-Vip_atac.csv") %>%
   atac_input()
 
 
+## Inhibitory
+cells_Non_Vip <- na.omit(colnames(so_morabito)[so_morabito$tags=="Non-Vip" |  so_morabito$tags=="Vip" | so_morabito$tags=="Non-Vip"])
+
+
 ####################################
 ############### Outputs  ###########
 ####################################
@@ -119,6 +123,8 @@ Non_Vip_net <- GRNet_2TF(df = df, gexpr = so_morabito_Non_Vip@assays$RNA@counts,
 Non_Vip_AD_net <- GRNet_2TF(df = df, gexpr = so_morabito_Non_Vip_AD@assays$RNA@counts, open_chrom = atac_non_vip)
 Non_Vip_Ctrl_net <- GRNet_2TF(df = df, gexpr = so_morabito_Non_Vip_ctrl@assays$RNA@counts, open_chrom = atac_non_vip)
 
+
+## Inhibitory
 
 save(RORB_net,Ex_net, Pv_net,
      Sst_net,Vip_net, Non_Vip_net, file = "Nets/CellType_Networks.RData")
