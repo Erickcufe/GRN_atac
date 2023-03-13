@@ -86,7 +86,10 @@ atac_non_vip <- readr::read_csv("atac_cellType_markers/Non-Vip_atac.csv") %>%
 
 
 ## Inhibitory
-cells_Non_Vip <- na.omit(colnames(so_morabito)[so_morabito$tags=="Non-Vip" |  so_morabito$tags=="Vip" | so_morabito$tags=="Non-Vip"])
+cells_Inh <- na.omit(colnames(so_morabito)[so_morabito$tags=="Non-Vip" |  so_morabito$tags=="Vip" | so_morabito$tags=="Non-Vip" | so_morabito$tags=="Sst"])
+so_morabito_Inh <- so_morabito[ ,cells_Inh]
+
+atac_inh <- rbind(atac_non_vip, atac_pv, atac_sst, atac_pv)
 
 
 ####################################
@@ -126,6 +129,9 @@ Non_Vip_Ctrl_net <- GRNet_2TF(df = df, gexpr = so_morabito_Non_Vip_ctrl@assays$R
 
 ## Inhibitory
 
+inh_net <- GRNet_2TF(df = df, gexpr = so_morabito_Inh@assays$RNA@counts, open_chrom = atac_inh)
+
+
 save(RORB_net,Ex_net, Pv_net,
      Sst_net,Vip_net, Non_Vip_net, file = "Nets/CellType_Networks.RData")
 
@@ -135,6 +141,21 @@ save(RORB_net,Ex_net, Pv_net,
 
 library(igraph)
 library(dplyr)
+
+g_inh <- inh_net %>%
+  select(TF, TG, coef, promoter, mse) %>%
+  mutate(rmse = sqrt(mse)) %>%
+  filter(rmse < mean(rmse)) %>%
+  graph_from_data_frame(directed = TRUE)
+write_graph(g_inh, file = "Nets/Graph_INH_SFG.graphml", format = "graphml")
+
+inh_net <- inh_net %>%
+  select(TF, TG, coef, promoter, mse) %>%
+  mutate(rmse = sqrt(mse)) %>%
+  filter(rmse < mean(rmse))
+inh_net$edge_btw <- edge_betweenness(g_inh)
+
+save(g_inh, inh_net, file = "Nets/CellTypes_Inh_Networks.RData")
 
 g_rorb <- RORB_net %>%
   select(TF, TG, coef, promoter, mse) %>%
@@ -148,7 +169,6 @@ RORB_net <- RORB_net %>%
   mutate(rmse = sqrt(mse)) %>%
   filter(rmse < mean(rmse))
 RORB_net$edge_btw <- edge_betweenness(g_rorb)
-
 
 g_ex <- Ex_net %>%
   select(TF, TG, coef, promoter, mse) %>%
