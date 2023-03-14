@@ -15,27 +15,42 @@ Seurat.object <- Footprint(
 p2 <- PlotFootprint(Seurat.object, features = "TBR1")
 Seurat.object$tags <- Idents(Seurat.object)
 
-cells <- colnames(Seurat.object)[Seurat.object$tags %in% c("Pv", "RORB+","Ex", "Vip", "Non-Vip", "Sst")]
-Seurat.object_pp <- Seurat.object[, cells]
+
 p2 <- PlotFootprint(Seurat.object, features = "TBR1",
-                    idents = c("Pv", "RORB+","Ex", "Vip", "Non-Vip", "Sst"),
-                    split.by = c("disease")) +
+                    # idents = c("Pv", "RORB+","Ex", "Vip", "Non-Vip", "Sst"),
+                    group.by = c("disease")) +
   theme(text = element_text(size = 20))
 
 
-jpeg("images/TBR1_motif.jpeg", units="in", width=10, height=10, res=300)
+p3 <- PlotFootprint(Seurat.object, features = "TBR1",
+                    idents = c("Pv", "RORB+","Ex", "Vip", "Non-Vip", "Sst")) +
+  theme(text = element_text(size = 20))
+
+
+jpeg("images/TBR1_disease_motif.jpeg", units="in", width=10, height=10, res=300)
 p2
 dev.off()
 
 
-DefaultAssay(mouse_brain) <- 'chromvar'
+jpeg("images/TBR1_motif.jpeg", units="in", width=10, height=10, res=300)
+p3
+dev.off()
+
+Seurat.object_pp <- Seurat.object
+DefaultAssay(Seurat.object_pp) <- 'chromvar'
 
 # look at the activity of Mef2c
-p2 <- FeaturePlot(
-  object = Seurat.object,
-  features = "MA0497.1",
+
+colnames(Seurat.object_pp@reductions$umap@cell.embeddings) <- c("UMAP_1", "UMAP_2")
+
+p4 <- Seurat::FeaturePlot(
+  object = Seurat.object_pp,
+  features = "MA0802.1",
   min.cutoff = 'q10',
   max.cutoff = 'q90',
-  pt.size = 0.1
-)
-p1 + p2
+  pt.size = 0.1,
+  reduction = "umap", dims = c(1,2),cols = c("gray", "red"),
+  raster = FALSE
+) +
+  theme(text = element_text(size = 20))
+p4
