@@ -135,8 +135,29 @@ results_snps_ex <- purrr::map(list_positions_ex, search_motifBreak)
 
 save(results_snps_ex, file = "Ex/posciones_snps_motifbreak.rda")
 
+########################
+########################
+########################
+
+library(dplyr)
+load("Ex/posciones_snps_motifbreak.rda")
+load("Nets/CellType_Networks.RData")
+load("RORB/posciones_snps_motifbreak.rda")
+
+chr4_174828789_174829804 <- results_snps_rorb[["chr4_174828789_174829804"]]$geneSymbol=="TBR1" %>%
+  data.frame() %>% filter(effect == "strong")
+
+results_snps_rorb[["chr4_174828789_174829804"]] <- na.omit(results_snps_rorb[["chr4_174828789_174829804"]])
+results <- results_snps_rorb[["chr4_174828789_174829804"]]
+results <- results[results$geneSymbo %in% "TBR1"]
+results <- results[results$geneSymbol=="TBR1"]
+
+plotMB(results = results_snps_rorb[["chr4_174828789_174829804"]], rsid = "rs1286781862", effect = "strong")
 
 
+########################
+########################
+########################
 
 ids <- prueba$RefSNP_id
 
