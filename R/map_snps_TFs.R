@@ -140,6 +140,9 @@ save(results_snps_ex, file = "Ex/posciones_snps_motifbreak.rda")
 ########################
 
 library(dplyr)
+library(motifbreakR)
+library(BSgenome.Hsapiens.UCSC.hg38)
+
 load("Ex/posciones_snps_motifbreak.rda")
 load("Nets/CellType_Networks.RData")
 load("RORB/posciones_snps_motifbreak.rda")
@@ -149,10 +152,59 @@ chr4_174828789_174829804 <- results_snps_rorb[["chr4_174828789_174829804"]]$gene
 
 results_snps_rorb[["chr4_174828789_174829804"]] <- na.omit(results_snps_rorb[["chr4_174828789_174829804"]])
 results <- results_snps_rorb[["chr4_174828789_174829804"]]
-results <- results[results$geneSymbo %in% "TBR1"]
-results <- results[results$geneSymbol=="TBR1"]
+results <- results[!is.na(elementMetadata(results)[,6])]
+results <- results[results$geneSymbol %in% "TBR1"]
+results <- results[2]
 
-plotMB(results = results_snps_rorb[["chr4_174828789_174829804"]], rsid = "rs1286781862", effect = "strong")
+results <- calculatePvalue(results)
+rs1286781862 <- results[names(results) %in% "rs1286781862"]
+rs1286781862 <- calculatePvalue(rs1286781862)
+results <- results[elementMetadata(results)]
+
+jpeg("images/rs1286781862_TBR1.jpeg", units="in", width=10, height=10, res=300)
+plotMB(results = results, rsid = "rs1286781862", effect = "strong")
+dev.off()
+
+library(clusterProfiler)
+library(enrichplot)
+
+library(org.Hs.eg.db)
+AnnotationDbi::keytypes(org.Hs.eg.db)
+
+gen_znf263 <- RORB_net[RORB_net$TF == "ZNF263",]
+gen_znf263 <- gen_znf263$TG
+
+# RORB
+rorb_vs_norm_go <- clusterProfiler::enrichGO(RORB_net$TG,
+                                             "org.Hs.eg.db",
+                                             keyType = "SYMBOL",
+                                             ont = "ALL",
+                                             minGSSize = 50)
+
+enr_go <- clusterProfiler::simplify(rorb_vs_norm_go)
+View(enr_go@result)
+
+jpeg("images/GO_TGs_RORB.jpeg", units="in", width=15, height=10, res=300)
+enrichplot::emapplot(enrichplot::pairwise_termsim(enr_go),
+                     showCategory = 30, cex_label_category = 0.7)
+dev.off()
+
+
+
+# Ex
+ex_vs_norm_go <- clusterProfiler::enrichGO(Ex_net$TG,
+                                             "org.Hs.eg.db",
+                                             keyType = "SYMBOL",
+                                             ont = "ALL",
+                                             minGSSize = 50)
+
+enr_go <- clusterProfiler::simplify(ex_vs_norm_go)
+View(enr_go@result)
+
+jpeg("images/GO_TGs_Ex.jpeg", units="in", width=15, height=10, res=300)
+enrichplot::emapplot(enrichplot::pairwise_termsim(enr_go),
+                     showCategory = 30, cex_label_category = 0.7)
+dev.off()
 
 
 ########################
