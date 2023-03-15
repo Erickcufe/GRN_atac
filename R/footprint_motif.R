@@ -628,15 +628,24 @@ dev.off()
 
 Seurat.object.NEW <- readRDS("footprint_TFs.rds")
 
-DefaultAssay(Seurat.object) <- "peaks"
+# DefaultAssay(Seurat.object) <- "peaks"
 
 Seurat.object <- Footprint(
-  object = Seurat.object,
-  motif.name = c("KLF16", "HINFP", "PATZ1", "TFDP1", "ZNF148", "FOS", "FOSL2", "MEF2C", "DBP"),
+  object = Seurat.object.NEW,
+  motif.name = c("KLF16", "HINFP", "PATZ1", "TFDP1", "ZNF148"),
   genome = BSgenome.Hsapiens.UCSC.hg38::BSgenome.Hsapiens.UCSC.hg38,
   in.peaks = TRUE
 )
 # plot the footprint data for each group of cells
+
+Seurat.object <- Footprint(
+  object = Seurat.object.NEW,
+  motif.name = c("FOS", "FOSL2", "MEF2C", "DBP"),
+  genome = BSgenome.Hsapiens.UCSC.hg38::BSgenome.Hsapiens.UCSC.hg38,
+  in.peaks = TRUE
+)
+
+# "FOS", "FOSL2", "MEF2C", "DBP"
 
 Seurat.object$tags <- Idents(Seurat.object)
 
