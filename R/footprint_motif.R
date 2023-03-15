@@ -628,9 +628,10 @@ dev.off()
 
 Seurat.object.NEW <- readRDS("footprint_TFs.rds")
 
+DefaultAssay(Seurat.object) <- "peaks"
 
 Seurat.object <- Footprint(
-  object = Seurat.object.NEW,
+  object = Seurat.object,
   motif.name = c("KLF16", "HINFP", "PATZ1", "TFDP1", "ZNF148", "FOS", "FOSL2", "MEF2C", "DBP"),
   genome = BSgenome.Hsapiens.UCSC.hg38::BSgenome.Hsapiens.UCSC.hg38,
   in.peaks = TRUE
