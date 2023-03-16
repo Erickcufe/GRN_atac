@@ -640,7 +640,7 @@ Seurat.object <- Footprint(
 
 Seurat.object <- Footprint(
   object = Seurat.object.NEW,
-  motif.name = c("FOS", "FOSL2", "MEF2C", "DBP"),
+  motif.name = c("FOSL2", "MEF2C", "DBP"),
   genome = BSgenome.Hsapiens.UCSC.hg38::BSgenome.Hsapiens.UCSC.hg38,
   in.peaks = TRUE
 )
