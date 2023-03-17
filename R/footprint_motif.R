@@ -954,3 +954,46 @@ p4 <- Seurat::FeaturePlot(
 jpeg("images/MEF2C_activity.jpeg", units="in", width=10, height=10, res=300)
 p4
 dev.off()
+
+
+
+## DBP
+
+p2 <- PlotFootprint(Seurat.object, features = "DBP",
+                    # idents = c("Pv", "RORB+","Ex", "Vip", "Non-Vip", "Sst"),
+                    group.by = c("disease")) +
+  theme(text = element_text(size = 20))
+
+
+p3 <- PlotFootprint(Seurat.object, features = "DBP",
+                    idents = c("Pv", "RORB+","Ex", "Vip", "Non-Vip", "Sst")) +
+  theme(text = element_text(size = 20))
+
+
+jpeg("images/DBP_disease_motif.jpeg", units="in", width=10, height=10, res=300)
+p2
+dev.off()
+
+
+jpeg("images/DBP_motif.jpeg", units="in", width=10, height=10, res=300)
+p3
+dev.off()
+
+Seurat.object_pp <- Seurat.object
+DefaultAssay(Seurat.object_pp) <- 'chromvar'
+
+colnames(Seurat.object_pp@reductions$umap@cell.embeddings) <- c("UMAP_1", "UMAP_2")
+p4 <- Seurat::FeaturePlot(
+  object = Seurat.object_pp,
+  features = "MA0639.1",
+  min.cutoff = 'q10',
+  max.cutoff = 'q90',
+  pt.size = 0.1,
+  reduction = "umap", dims = c(1,2),cols = c("gray", "purple"),
+  raster = FALSE
+) +
+  theme(text = element_text(size = 20))
+
+jpeg("images/DBP_activity.jpeg", units="in", width=10, height=10, res=300)
+p4
+dev.off()
