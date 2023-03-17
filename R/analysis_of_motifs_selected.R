@@ -19,7 +19,7 @@ search_motifBreak <- function(motif_name, region){
                                          search.genome = BSgenome.Hsapiens.UCSC.hg38::BSgenome.Hsapiens.UCSC.hg38)
 
   motif_list <- subset(MotifDb,
-                       geneSymbol == motif_name, dataSource %in% c("jaspar2022"))
+                       geneSymbol == motif_name)
 
   motif_list_2 <- subset(motifbreakR_motif, geneSymbol == motif_name)
   results_1 <- motifbreakR::motifbreakR(snpList = snps.mb, filterp = TRUE,
@@ -33,13 +33,12 @@ search_motifBreak <- function(motif_name, region){
                                         threshold = 1e-4,
                                         method = "ic",
                                         BPPARAM = BiocParallel::MulticoreParam(6))
+  results <- c(results_1, results_2)
 
   return(results)
 }
 
-region_fosl2 <- RORB_net$promoter[RORB_net$TF=="FOSL2"]
 
-FOSL2_snps <- search_motifBreak(motif_name = "FOSL2", region = region_fosl2)
 
 Seurat.object <- readRDS("footprint_TFs.rds")
 
@@ -48,13 +47,26 @@ Seurat.object <- readRDS("footprint_TFs.rds")
 ##################################
 ## Posiciones claves de FOSL2 en RORB+
 ##################################
-
-motif_list <- subset(motifbreakR_motif, geneSymbol == "FOSL2")
-
-FOSL2 <- GetFootprintData(Seurat.object, features = "FOSL2", group.by = "disease")
+load("Ex/posciones_snps_motifbreak.rda")
+load("Nets/CellType_Networks.RData")
+load("RORB/posciones_snps_motifbreak.rda")
 motifs_IDs <- Seurat.object@assays$peaks@motifs@motif.names
 motifs_list <- Seurat.object@assays$peaks@motifs@positions
 scores_pos_FOSL2 <- motifs_list$MA0478.1 %>% data.frame()
+
+region_fosl2 <- RORB_net$promoter[RORB_net$TF=="FOSL2"]
+FOSL2_snps <- search_motifBreak(motif_name = "FOSL2", region = region_fosl2)
+saveRDS(FOSL2_snps, "RORB/FOSL2_snps.rds")
+FOSL2_snps <- readRDS("RORB/FOSL2_snps.rds")
+
+df_fosl2 <- data.frame(FOSL2_snps)
+table(df_fosl2$SNP_id)
+
+library(BSgenome.Hsapiens.UCSC.hg38)
+
+plotMB(results = FOSL2_snps, rsid = "rs1021192569", effect = "strong")
+
+
 
 
 
