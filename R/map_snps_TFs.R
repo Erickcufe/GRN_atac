@@ -51,7 +51,7 @@ search_overlap <- function(net){
 ## Posiciones claves de RORB+
 ##################################
 
-chr4_174828789_174829804 <- snpsByOverlaps(snps_ids, GRanges("4:174828789-174829804"))
+chr4_174828789_174829804 <- SNPlocs.Hsapiens.dbSNP155.GRCh38::snpsByOverlaps(snps_ids, GRanges("4:174828789-174829804"))
 chr4_174828789_174829804 <- data.frame(chr4_174828789_174829804)
 
 chr13_61414782_61415825 <- snpsByOverlaps(snps_ids, GRanges("13:61414782-61415825"))
