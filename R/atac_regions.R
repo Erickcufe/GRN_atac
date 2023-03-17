@@ -27,6 +27,29 @@ readr::write_csv(differential.activity, "atac_cellType_markers/RORB+_atac.csv")
 
 ###############
 ##############
+# RORB+ vs Ex NEURONS
+###############
+
+differential.activity <- FindMarkers(
+  object = Seurat.object.NEW,
+  ident.1 = 'RORB+',
+  ident.2 = "Ex",
+  only.pos = TRUE,
+  test.use = 'LR',
+  min.pct = 0.05,
+  latent.vars = 'nCount_peaks'
+)
+
+differential.activity <- differential.activity[differential.activity$p_val < 0.05,]
+differential.activity$regions <- rownames(differential.activity)
+
+readr::write_csv(differential.activity, "atac_cellType_markers/RORB+_atac.csv")
+
+
+
+
+###############
+##############
 # Pv NEURONS
 ###############
 
