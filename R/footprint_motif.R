@@ -630,13 +630,7 @@ Seurat.object.NEW <- readRDS("footprint_TFs.rds")
 
 # DefaultAssay(Seurat.object) <- "peaks"
 
-Seurat.object <- Footprint(
-  object = Seurat.object.NEW,
-  motif.name = c("KLF16", "HINFP", "PATZ1", "TFDP1", "ZNF148"),
-  genome = BSgenome.Hsapiens.UCSC.hg38::BSgenome.Hsapiens.UCSC.hg38,
-  in.peaks = TRUE
-)
-# plot the footprint data for each group of cells
+
 
 Seurat.object <- Footprint(
   object = Seurat.object.NEW,
@@ -645,9 +639,318 @@ Seurat.object <- Footprint(
   in.peaks = TRUE
 )
 
+
+Seurat.object <- Footprint(
+  object = Seurat.object,
+  motif.name = c("KLF16", "HINFP", "PATZ1", "TFDP1", "ZNF148"),
+  genome = BSgenome.Hsapiens.UCSC.hg38::BSgenome.Hsapiens.UCSC.hg38,
+  in.peaks = TRUE
+)
+# plot the footprint data for each group of cells
+
 # "FOS", "FOSL2", "MEF2C", "DBP"
 
 Seurat.object$tags <- Idents(Seurat.object)
 
 saveRDS(Seurat.object, "footprint_TFs.rds")
 
+## This is the code to get the footprint data
+bb <- GetFootprintData(Seurat.object, features = "KLF16", group.by = "disease")
+
+## KLF16
+
+p2 <- PlotFootprint(Seurat.object, features = "KLF16",
+                    # idents = c("Pv", "RORB+","Ex", "Vip", "Non-Vip", "Sst"),
+                    group.by = c("disease")) +
+  theme(text = element_text(size = 20))
+
+
+p3 <- PlotFootprint(Seurat.object, features = "KLF16",
+                    idents = c("Pv", "RORB+","Ex", "Vip", "Non-Vip", "Sst")) +
+  theme(text = element_text(size = 20))
+
+
+jpeg("images/KLF16_disease_motif.jpeg", units="in", width=10, height=10, res=300)
+p2
+dev.off()
+
+
+jpeg("images/KLF16_motif.jpeg", units="in", width=10, height=10, res=300)
+p3
+dev.off()
+
+Seurat.object_pp <- Seurat.object
+DefaultAssay(Seurat.object_pp) <- 'chromvar'
+
+colnames(Seurat.object_pp@reductions$umap@cell.embeddings) <- c("UMAP_1", "UMAP_2")
+p4 <- Seurat::FeaturePlot(
+  object = Seurat.object_pp,
+  features = "MA0741.1",
+  min.cutoff = 'q10',
+  max.cutoff = 'q90',
+  pt.size = 0.1,
+  reduction = "umap", dims = c(1,2),cols = c("gray", "purple"),
+  raster = FALSE
+) +
+  theme(text = element_text(size = 20))
+
+jpeg("images/KLF16_activity.jpeg", units="in", width=10, height=10, res=300)
+p4
+dev.off()
+
+
+## HINFP
+
+p2 <- PlotFootprint(Seurat.object, features = "HINFP",
+                    # idents = c("Pv", "RORB+","Ex", "Vip", "Non-Vip", "Sst"),
+                    group.by = c("disease")) +
+  theme(text = element_text(size = 20))
+
+
+p3 <- PlotFootprint(Seurat.object, features = "HINFP",
+                    idents = c("Pv", "RORB+","Ex", "Vip", "Non-Vip", "Sst")) +
+  theme(text = element_text(size = 20))
+
+
+jpeg("images/HINFP_disease_motif.jpeg", units="in", width=10, height=10, res=300)
+p2
+dev.off()
+
+
+jpeg("images/HINFP_motif.jpeg", units="in", width=10, height=10, res=300)
+p3
+dev.off()
+
+Seurat.object_pp <- Seurat.object
+DefaultAssay(Seurat.object_pp) <- 'chromvar'
+
+colnames(Seurat.object_pp@reductions$umap@cell.embeddings) <- c("UMAP_1", "UMAP_2")
+p4 <- Seurat::FeaturePlot(
+  object = Seurat.object_pp,
+  features = "MA0131.2",
+  min.cutoff = 'q10',
+  max.cutoff = 'q90',
+  pt.size = 0.1,
+  reduction = "umap", dims = c(1,2),cols = c("gray", "purple"),
+  raster = FALSE
+) +
+  theme(text = element_text(size = 20))
+
+jpeg("images/HINFP_activity.jpeg", units="in", width=10, height=10, res=300)
+p4
+dev.off()
+
+
+
+## PATZ1
+
+p2 <- PlotFootprint(Seurat.object, features = "PATZ1",
+                    # idents = c("Pv", "RORB+","Ex", "Vip", "Non-Vip", "Sst"),
+                    group.by = c("disease")) +
+  theme(text = element_text(size = 20))
+
+
+p3 <- PlotFootprint(Seurat.object, features = "PATZ1",
+                    idents = c("Pv", "RORB+","Ex", "Vip", "Non-Vip", "Sst")) +
+  theme(text = element_text(size = 20))
+
+
+jpeg("images/PATZ1_disease_motif.jpeg", units="in", width=10, height=10, res=300)
+p2
+dev.off()
+
+
+jpeg("images/PATZ1_motif.jpeg", units="in", width=10, height=10, res=300)
+p3
+dev.off()
+
+Seurat.object_pp <- Seurat.object
+DefaultAssay(Seurat.object_pp) <- 'chromvar'
+
+colnames(Seurat.object_pp@reductions$umap@cell.embeddings) <- c("UMAP_1", "UMAP_2")
+p4 <- Seurat::FeaturePlot(
+  object = Seurat.object_pp,
+  features = "MA1961.1",
+  min.cutoff = 'q10',
+  max.cutoff = 'q90',
+  pt.size = 0.1,
+  reduction = "umap", dims = c(1,2),cols = c("gray", "purple"),
+  raster = FALSE
+) +
+  theme(text = element_text(size = 20))
+
+jpeg("images/PATZ1_activity.jpeg", units="in", width=10, height=10, res=300)
+p4
+dev.off()
+
+
+
+## TFDP1
+
+p2 <- PlotFootprint(Seurat.object, features = "TFDP1",
+                    # idents = c("Pv", "RORB+","Ex", "Vip", "Non-Vip", "Sst"),
+                    group.by = c("disease")) +
+  theme(text = element_text(size = 20))
+
+
+p3 <- PlotFootprint(Seurat.object, features = "TFDP1",
+                    idents = c("Pv", "RORB+","Ex", "Vip", "Non-Vip", "Sst")) +
+  theme(text = element_text(size = 20))
+
+
+jpeg("images/TFDP1_disease_motif.jpeg", units="in", width=10, height=10, res=300)
+p2
+dev.off()
+
+
+jpeg("images/TFDP1_motif.jpeg", units="in", width=10, height=10, res=300)
+p3
+dev.off()
+
+Seurat.object_pp <- Seurat.object
+DefaultAssay(Seurat.object_pp) <- 'chromvar'
+
+colnames(Seurat.object_pp@reductions$umap@cell.embeddings) <- c("UMAP_1", "UMAP_2")
+p4 <- Seurat::FeaturePlot(
+  object = Seurat.object_pp,
+  features = "MA1122.1",
+  min.cutoff = 'q10',
+  max.cutoff = 'q90',
+  pt.size = 0.1,
+  reduction = "umap", dims = c(1,2),cols = c("gray", "purple"),
+  raster = FALSE
+) +
+  theme(text = element_text(size = 20))
+
+jpeg("images/TFDP1_activity.jpeg", units="in", width=10, height=10, res=300)
+p4
+dev.off()
+
+
+
+## ZNF148
+
+p2 <- PlotFootprint(Seurat.object, features = "ZNF148",
+                    # idents = c("Pv", "RORB+","Ex", "Vip", "Non-Vip", "Sst"),
+                    group.by = c("disease")) +
+  theme(text = element_text(size = 20))
+
+
+p3 <- PlotFootprint(Seurat.object, features = "ZNF148",
+                    idents = c("Pv", "RORB+","Ex", "Vip", "Non-Vip", "Sst")) +
+  theme(text = element_text(size = 20))
+
+
+jpeg("images/ZNF148_disease_motif.jpeg", units="in", width=10, height=10, res=300)
+p2
+dev.off()
+
+
+jpeg("images/ZNF148_motif.jpeg", units="in", width=10, height=10, res=300)
+p3
+dev.off()
+
+Seurat.object_pp <- Seurat.object
+DefaultAssay(Seurat.object_pp) <- 'chromvar'
+
+colnames(Seurat.object_pp@reductions$umap@cell.embeddings) <- c("UMAP_1", "UMAP_2")
+p4 <- Seurat::FeaturePlot(
+  object = Seurat.object_pp,
+  features = "MA1653.1",
+  min.cutoff = 'q10',
+  max.cutoff = 'q90',
+  pt.size = 0.1,
+  reduction = "umap", dims = c(1,2),cols = c("gray", "purple"),
+  raster = FALSE
+) +
+  theme(text = element_text(size = 20))
+
+jpeg("images/ZNF148_activity.jpeg", units="in", width=10, height=10, res=300)
+p4
+dev.off()
+
+
+
+## FOSL2
+
+p2 <- PlotFootprint(Seurat.object, features = "FOSL2",
+                    # idents = c("Pv", "RORB+","Ex", "Vip", "Non-Vip", "Sst"),
+                    group.by = c("disease")) +
+  theme(text = element_text(size = 20))
+
+
+p3 <- PlotFootprint(Seurat.object, features = "FOSL2",
+                    idents = c("Pv", "RORB+","Ex", "Vip", "Non-Vip", "Sst")) +
+  theme(text = element_text(size = 20))
+
+
+jpeg("images/FOSL2_disease_motif.jpeg", units="in", width=10, height=10, res=300)
+p2
+dev.off()
+
+
+jpeg("images/FOSL2_motif.jpeg", units="in", width=10, height=10, res=300)
+p3
+dev.off()
+
+Seurat.object_pp <- Seurat.object
+DefaultAssay(Seurat.object_pp) <- 'chromvar'
+
+colnames(Seurat.object_pp@reductions$umap@cell.embeddings) <- c("UMAP_1", "UMAP_2")
+p4 <- Seurat::FeaturePlot(
+  object = Seurat.object_pp,
+  features = "MA0478.1",
+  min.cutoff = 'q10',
+  max.cutoff = 'q90',
+  pt.size = 0.1,
+  reduction = "umap", dims = c(1,2),cols = c("gray", "purple"),
+  raster = FALSE
+) +
+  theme(text = element_text(size = 20))
+
+jpeg("images/FOSL2_activity.jpeg", units="in", width=10, height=10, res=300)
+p4
+dev.off()
+
+
+
+## MEF2C
+
+p2 <- PlotFootprint(Seurat.object, features = "MEF2C",
+                    # idents = c("Pv", "RORB+","Ex", "Vip", "Non-Vip", "Sst"),
+                    group.by = c("disease")) +
+  theme(text = element_text(size = 20))
+
+
+p3 <- PlotFootprint(Seurat.object, features = "MEF2C",
+                    idents = c("Pv", "RORB+","Ex", "Vip", "Non-Vip", "Sst")) +
+  theme(text = element_text(size = 20))
+
+
+jpeg("images/MEF2C_disease_motif.jpeg", units="in", width=10, height=10, res=300)
+p2
+dev.off()
+
+
+jpeg("images/MEF2C_motif.jpeg", units="in", width=10, height=10, res=300)
+p3
+dev.off()
+
+Seurat.object_pp <- Seurat.object
+DefaultAssay(Seurat.object_pp) <- 'chromvar'
+
+colnames(Seurat.object_pp@reductions$umap@cell.embeddings) <- c("UMAP_1", "UMAP_2")
+p4 <- Seurat::FeaturePlot(
+  object = Seurat.object_pp,
+  features = "MA0497.1",
+  min.cutoff = 'q10',
+  max.cutoff = 'q90',
+  pt.size = 0.1,
+  reduction = "umap", dims = c(1,2),cols = c("gray", "purple"),
+  raster = FALSE
+) +
+  theme(text = element_text(size = 20))
+
+jpeg("images/MEF2C_activity.jpeg", units="in", width=10, height=10, res=300)
+p4
+dev.off()
