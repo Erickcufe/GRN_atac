@@ -39,6 +39,24 @@ search_motifBreak <- function(motif_name, region){
 }
 
 
+plot_SNPs <- function(FOSL2_snps, dir_path){
+
+  FOSL2_snps <- subset(FOSL2_snps, effect == "strong")
+  ids_snps <- unique(FOSL2_snps$SNP_id)
+  suppressMessages(library(BSgenome.Hsapiens.UCSC.hg38))
+  suppressMessages(library(motifbreakR))
+
+
+  for(i in 1:length(ids_snps)){
+    a <- ids_snps[i]
+    print(a)
+    file_dir <- paste0(here::here(),"/",dir_path, "/", a, ".jpeg")
+    jpeg(file_dir, units="in", width=10, height=10, res=300)
+    plotMB(results = FOSL2_snps, rsid = a, effect = "strong")
+    dev.off()
+  }
+}
+
 
 Seurat.object <- readRDS("footprint_TFs.rds")
 
@@ -56,21 +74,58 @@ scores_pos_FOSL2 <- motifs_list$MA0478.1 %>% data.frame()
 
 region_fosl2 <- RORB_net$promoter[RORB_net$TF=="FOSL2"]
 FOSL2_snps <- search_motifBreak(motif_name = "FOSL2", region = region_fosl2)
-saveRDS(FOSL2_snps, "RORB/FOSL2_snps.rds")
-FOSL2_snps <- readRDS("RORB/FOSL2_snps.rds")
+saveRDS(FOSL2_snps, "RORB/FOSL2/FOSL2_snps.rds")
+FOSL2_snps <- readRDS("RORB/FOSL2/FOSL2_snps.rds")
+FOSL2_snps <- subset(FOSL2_snps, dataSource %in% c("jaspar2022", "HOCOMOCOv11-core-A"))
+FOSL2_snps$Refpvalue <- NULL
+FOSL2_snps$Altpvalue <- NULL
 
 df_fosl2 <- data.frame(FOSL2_snps)
 table(df_fosl2$SNP_id)
-
-library(BSgenome.Hsapiens.UCSC.hg38)
-
-plotMB(results = FOSL2_snps, rsid = "rs1021192569", effect = "strong")
+plot_SNPs(FOSL2_snps = FOSL2_snps, dir_path = "RORB/FOSL2")
 
 
+##################################
+## Posiciones claves de TRB1 en RORB+
+##################################
+
+region_tbr1 <- RORB_net$promoter[RORB_net$TF=="TBR1"]
+TBR1_snps <- search_motifBreak(motif_name = "TBR1", region = region_tbr1)
+saveRDS(TBR1_snps, "RORB/TBR1/TBR1_snps.rds")
+
+TBR1_snps <- subset(TBR1_snps, dataSource %in% c("jaspar2022", "HOCOMOCOv11-core-A"))
+TBR1_snps$Refpvalue <- NULL
+TBR1_snps$Altpvalue <- NULL
+
+plot_SNPs(FOSL2_snps = TBR1_snps, dir_path = "RORB/TBR1")
+df <- data.frame(TBR1_snps)
+
+
+##################################
+## Posiciones claves de FOSL2 en Ex
+##################################
+region_fosl2 <- Ex_net$promoter[Ex_net$TF=="FOSL2"]
+FOSL2_snps <- search_motifBreak(motif_name = "FOSL2", region = region_fosl2)
+saveRDS(FOSL2_snps, "Ex/FOSL2/FOSL2_snps.rds")
+FOSL2_snps <- subset(FOSL2_snps, dataSource %in% c("jaspar2022", "HOCOMOCOv11-core-A"))
+FOSL2_snps$Refpvalue <- NULL
+FOSL2_snps$Altpvalue <- NULL
+
+plot_SNPs(FOSL2_snps = FOSL2_snps, dir_path = "Ex/FOSL2")
 
 
 
-PlotFootprint(Seurat.object, features = c("FOSL2"),
-              idents = c("Pv", "RORB+","Ex", "Vip", "Non-Vip", "Sst")
-)
+##################################
+## Posiciones claves de TRB1 en Ex
+##################################
 
+region_tbr1 <- Ex_net$promoter[Ex_net$TF=="TBR1"]
+TBR1_snps <- search_motifBreak(motif_name = "TBR1", region = region_tbr1)
+saveRDS(TBR1_snps, "Ex/TBR1/TBR1_snps.rds")
+
+TBR1_snps <- subset(TBR1_snps, dataSource %in% c("jaspar2022", "HOCOMOCOv11-core-A"))
+TBR1_snps$Refpvalue <- NULL
+TBR1_snps$Altpvalue <- NULL
+
+plot_SNPs(FOSL2_snps = TBR1_snps, dir_path = "Ex/TBR1")
+df <- data.frame(TBR1_snps)
