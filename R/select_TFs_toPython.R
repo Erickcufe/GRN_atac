@@ -8,7 +8,22 @@ load("image_for_networks.RData")
 atac_rorb <- readr::read_csv("atac_cellType_markers/RORB+_atac.csv") %>%
   atac_input()
 
+atac_ex <- readr::read_csv("atac_cellType_markers/Ex_atac.csv") %>%
+  atac_input()
 
+atac_vip <- readr::read_csv("atac_cellType_markers/Vip_atac.csv") %>%
+  atac_input()
+
+atac_pv <- readr::read_csv("atac_cellType_markers/Pv_atac.csv") %>%
+  atac_input()
+
+atac_sst <- readr::read_csv("atac_cellType_markers/Sst_atac.csv") %>%
+  atac_input()
+
+atac_non_vip <- readr::read_csv("atac_cellType_markers/Non-Vip_atac.csv") %>%
+  atac_input()
+
+atac_inh <- rbind(atac_non_vip, atac_pv, atac_sst, atac_pv)
 
 select_TFs_by_ATAC <- function(open_chrom, df, extension_bps = 0){
   library(stringr)
@@ -89,4 +104,28 @@ select_TFs_by_ATAC <- function(open_chrom, df, extension_bps = 0){
   return(df_tf)
 
 }
+
+
+rorb <- select_TFs_by_ATAC(open_chrom = atac_rorb, df = df, extension_bps = 0) %>%
+  readr::write_csv("tf_names_rorb.csv")
+
+ex <- select_TFs_by_ATAC(open_chrom = atac_ex, df = df, extension_bps = 0) %>%
+  readr::write_csv("tf_names_ex.csv")
+
+pv <- select_TFs_by_ATAC(open_chrom = atac_pv, df = df, extension_bps = 0) %>%
+  readr::write_csv("tf_names_pv.csv")
+
+sst <- select_TFs_by_ATAC(open_chrom = atac_sst, df = df, extension_bps = 0) %>%
+  readr::write_csv("tf_names_sst.csv")
+
+vip <- select_TFs_by_ATAC(open_chrom = atac_vip, df = df, extension_bps = 0) %>%
+  readr::write_csv("tf_names_vip.csv")
+
+non_vip <- select_TFs_by_ATAC(open_chrom = atac_non_vip, df = df, extension_bps = 0) %>%
+  readr::write_csv("tf_names_non_vip.csv")
+
+inh <- select_TFs_by_ATAC(open_chrom = atac_inh, df = df, extension_bps = 0) %>%
+  readr::write_csv("tf_names_inh.csv")
+
+
 
