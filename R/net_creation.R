@@ -1,6 +1,9 @@
 ####################################
 ############### Inputs  ############
 ####################################
+df <- readRDS("TFs_input_df.rds")
+
+save(df, atac_input, extract_TFs, GRNet_2TF, file = "image_for_networks.RData")
 
 load("image_for_networks.RData")
 
@@ -9,29 +12,29 @@ load("image_for_networks.RData")
 library(dplyr)
 library(Seurat)
 # snRNA
-so_morabito <- readRDS("anotation_SFG.rds")
+so_morabito <- readRDS("../merge_neurons/anotacion_Parcial_neuronas_neuronType.rds")
 so_morabito$tags <- Idents(so_morabito)
 
 ## RORB
-cell_AD_rorb <- na.omit(colnames(so_morabito)[(so_morabito$disease=="AD" & so_morabito$tags=="RORB+")])
-cell_ctrl_rorb <- na.omit(colnames(so_morabito)[(so_morabito$disease=="Control" & so_morabito$tags=="RORB+")])
-cells_rorb <- na.omit(colnames(so_morabito)[so_morabito$tags=="RORB+"])
+# cell_AD_rorb <- na.omit(colnames(so_morabito)[(so_morabito$disease=="AD" & so_morabito$tags=="RORB")])
+# cell_ctrl_rorb <- na.omit(colnames(so_morabito)[(so_morabito$disease=="Control" & so_morabito$tags=="RORB")])
+cells_rorb <- na.omit(colnames(so_morabito)[so_morabito$tags=="RORB"])
 
 so_morabito_RORB <- so_morabito[ ,cells_rorb]
-so_morabito_RORB_AD <- so_morabito_RORB[,cell_AD_rorb]
-so_morabito_RORB_ctrl <- so_morabito_RORB[,cell_ctrl_rorb]
+# so_morabito_RORB_AD <- so_morabito_RORB[,cell_AD_rorb]
+# so_morabito_RORB_ctrl <- so_morabito_RORB[,cell_ctrl_rorb]
 
 atac_rorb <- readr::read_csv("atac_cellType_markers/RORB+_atac.csv") %>%
   atac_input()
 
 ## Ex
-cell_AD_ex <- na.omit(colnames(so_morabito)[(so_morabito$disease=="AD" & so_morabito$tags=="Ex")])
-cell_ctrl_ex <- na.omit(colnames(so_morabito)[(so_morabito$disease=="Control" & so_morabito$tags=="Ex")])
-cells_ex <- na.omit(colnames(so_morabito)[so_morabito$tags=="Ex"])
+# cell_AD_ex <- na.omit(colnames(so_morabito)[(so_morabito$disease=="AD" & so_morabito$tags=="Ex_1")])
+# cell_ctrl_ex <- na.omit(colnames(so_morabito)[(so_morabito$disease=="Control" & so_morabito$tags=="Ex_1")])
+cells_ex <- na.omit(colnames(so_morabito)[so_morabito$tags=="Ex_1"])
 
 so_morabito_Ex <- so_morabito[ ,cells_ex]
-so_morabito_Ex_AD <- so_morabito_Ex[,cell_AD_ex]
-so_morabito_Ex_ctrl <- so_morabito_Ex[,cell_ctrl_ex]
+# so_morabito_Ex_AD <- so_morabito_Ex[,cell_AD_ex]
+# so_morabito_Ex_ctrl <- so_morabito_Ex[,cell_ctrl_ex]
 
 atac_ex <- readr::read_csv("atac_cellType_markers/Ex_atac.csv") %>%
   atac_input()
@@ -133,7 +136,7 @@ inh_net <- GRNet_2TF(df = df, gexpr = so_morabito_Inh@assays$RNA@counts, open_ch
 
 
 save(RORB_net,Ex_net, Pv_net,
-     Sst_net,Vip_net, Non_Vip_net, file = "Nets/CellType_Networks.RData")
+     Vip_net, Non_Vip_net, inh_net, file = "Nets/CellType_Networks.RData")
 
 ####################################
 ############### Igraph  ###########

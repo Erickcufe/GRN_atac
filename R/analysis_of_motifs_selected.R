@@ -99,7 +99,7 @@ TBR1_snps$Altpvalue <- NULL
 
 plot_SNPs(FOSL2_snps = TBR1_snps, dir_path = "RORB/TBR1")
 df <- data.frame(TBR1_snps)
-
+saveRDS(df, "RORB/TBR1/TBR1_snps.rds")
 
 ##################################
 ## Posiciones claves de FOSL2 en Ex

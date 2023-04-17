@@ -2,10 +2,42 @@ GRNet <- function(df, gexpr, open_chrom, df_gene_id = 'hgnc_symbol', gexpr_gene_
                   cutoff_percentage = 0.9, cutoff_absolute = 0.1, num_cores = 6, train_ratio = 0.7,
                   mart = biomaRt::useMart(biomart="ensembl",
                                            dataset="hsapiens_gene_ensembl"), extension_bps = 0){
-  load("extract_tfs_function.RData")
-
-
+  # load("extract_tfs_function.RData")
+  load("promoter_ranges.rda")
   library(stringr)
+  library(GenomicRanges)
+  open_chrom$hg38_Start <- as.numeric(open_chrom$hg38_Start)
+  open_chrom$hg38_Stop <- as.numeric(open_chrom$hg38_Stop)
+
+  atac_granges <- GRanges(seqnames = open_chrom$hg38_Chromosome,
+                          ranges = IRanges(start = open_chrom$hg38_Start,
+                                           end = open_chrom$hg38_Stop))
+
+  main.chroms <- standardChromosomes(BSgenome.Hsapiens.UCSC.hg38::BSgenome.Hsapiens.UCSC.hg38)
+  seqlevels(promoterranges) <- paste0("chr", seqlevels(promoterranges))
+  keep.peaks <- as.logical(seqnames(promoterranges) %in% main.chroms)
+  promoterranges <- promoterranges[keep.peaks, ]
+  seqlevels(promoterranges) <- main.chroms
+  olap <- IRanges::findOverlaps(atac_granges, promoterranges)
+  credpromoter <- atac_granges[S4Vectors::queryHits(olap)]
+
+  rangos <-  data.frame(ranges(promoterranges[S4Vectors::subjectHits(olap)]))
+  mcols(credpromoter) <- cbind(mcols(credpromoter),
+                               mcols(promoterranges[S4Vectors::subjectHits(olap)]),
+                               rangos)
+
+  df_ranges <- data.frame(credpromoter)
+  df_ranges <- data.frame(gene = df_ranges$gene_name,
+                          gene_chr = df_ranges$seqnames,
+                          promoter_start = df_ranges$start,
+                          promoter_end = df_ranges$end)
+  df_ranges <- na.omit(df_ranges)
+  df_ranges <- df_ranges[!duplicated(df_ranges$promoter_start),]
+  df_ranges <- extract_TFs(df_ranges)
+
+
+  df <- rbind(df, df_ranges)
+
   if(!is.null(open_chrom)){
     df$en_chrs = str_extract(df$promoter, "(?i)(?<=chr)\\d+")
     # Extract promoter start and end positions
@@ -13,7 +45,7 @@ GRNet <- function(df, gexpr, open_chrom, df_gene_id = 'hgnc_symbol', gexpr_gene_
     df$en_end = abs(as.numeric(str_extract(df$promoter, "(?i)-(\\d+){5}")))
     df$en_start_intend = df$en_start -extension_bps
     df$en_end_intend  = df$en_end + extension_bps
-
+    df <- na.omit(df)
     colnames(open_chrom) = c('chrs', 'Start', 'Stop')
     open_chrom$chrs = gsub('chr','', open_chrom$chrs)
     open_chrom$Start <- as.numeric(open_chrom$Start)
@@ -91,6 +123,10 @@ GRNet <- function(df, gexpr, open_chrom, df_gene_id = 'hgnc_symbol', gexpr_gene_
   df <- df[,c('gene','promoter','TFbs','TF')]
   df <- df[df$TF != df$gene, ]
 
+
+  ###############################################################
+  ###############################################################
+  ###############################################################
 
   ###### change TF names from hgnc_symbol to emsembl_id
   ###### delete the TF whose ensembl_id is NA

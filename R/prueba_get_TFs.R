@@ -10,8 +10,8 @@ df_pro <- data.frame(gene = pr$gene_name,
 new_TFs <- extract_TFs(df_pro)
 
 # load("../CongresoNacionalBioquimica_Merida/data/GOAL_standard.rda")
-df <- readRDS("ranges_ATAC_annoted.rds")
-df <- data.frame(df)
+df1 <- readRDS("ranges_ATAC_annoted.rds")
+df <- data.frame(df1)
 df_copy <- df
 df <- df[,c("names", "seqnames", "start.1", "end.1")]
 df <- df[!duplicated(df$start.1), ]
