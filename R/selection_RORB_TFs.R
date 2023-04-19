@@ -51,6 +51,26 @@ g_rorb <- rorb_sel %>%
   select(TF, TG, coef, promoter, mse, Is_marker) %>%
   graph_from_data_frame(directed = TRUE)
 
+
+rorb_sel_NULL_GLIS1 <- rorb_sel[rorb_sel!="GLIS1", ] %>% na.omit()
+g_rorb_without_GLIS3 <- rorb_sel_NULL_GLIS1 %>%
+  select(TF, TG, coef, promoter, mse, Is_marker) %>%
+  graph_from_data_frame(directed = TRUE)
+write_graph(g_rorb_without_GLIS3, file = "Nets/Graph_RORB_SFG_withputGLIS1.graphml", format = "graphml")
+
+rb_attack_vip_ctr <- brainGraph::robustness(g_rorb)
+rb_attack_vip_ad <- brainGraph::robustness(g_rorb_without_GLIS3)
+
+jpeg("robustness_attack_example.jpeg", units="in", width=15, height=10, res=300)
+ggplot( rb_attack_vip_ctr, aes(removed.pct, 1- comp.pct)) +
+  geom_line(color = "darkred", size = 1) + theme_minimal() +
+  theme(text = element_text(size = 20)) +
+  geom_line(data = rb_attack_vip_ad, mapping = aes(removed.pct, 1- comp.pct),
+            color ="darkblue", size = 1)
+# saveRDS(net_vip_control, "net_vip_control.rds")
+# saveRDS(net_vip_ad, "net_vip_AD.rds")
+dev.off()
+
 plot(g_rorb)
 rorb_sel$edge_btw <- edge_betweenness(g_rorb)
 degree_out <- data.frame(degree(g_rorb, mode = "out"))
