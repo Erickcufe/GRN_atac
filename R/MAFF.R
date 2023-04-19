@@ -1,8 +1,8 @@
 
 rorb_uniques <- readr::read_csv("rorb_uniques.csv")
-region_GLIS1 <- rorb_uniques$promoter[rorb_uniques$TF=="GLIS1"]
-motif_name <- "GLIS1"
-region <- region_GLIS1
+region_MAFF <- rorb_uniques$promoter[rorb_uniques$TF=="MAFF"]
+motif_name <- "MAFF"
+region <- region_MAFF
 suppressMessages(library(SNPlocs.Hsapiens.dbSNP155.GRCh38))
 suppressMessages(library(motifbreakR))
 suppressMessages(library(MotifDb))
@@ -28,18 +28,18 @@ results_1 <- motifbreakR::motifbreakR(snpList = snps.mb, filterp = TRUE,
                                       method = "ic",
                                       BPPARAM = BiocParallel::MulticoreParam(6))
 
-GLIS1_snps <- results_1
+MAFF_snps <- results_1
 
 
-# GLIS1_snps <- search_motifBreak(motif_name = "GLIS1", region = region_GLIS1)
-dir.create("RORB/GLIS1")
-saveRDS(GLIS1_snps, "RORB/GLIS1/GLIS1_snps.rds")
-GLIS1_snps <- readRDS("RORB/GLIS1/GLIS1_snps.rds")
-GLIS1_snps <- subset(GLIS1_snps, dataSource %in% c("jaspar2022", "HOCOMOCOv11-core-A"))
-GLIS1_snps$Refpvalue <- NULL
-GLIS1_snps$Altpvalue <- NULL
+# MAFF_snps <- search_motifBreak(motif_name = "MAFF", region = region_MAFF)
+dir.create("RORB/MAFF")
+saveRDS(MAFF_snps, "RORB/MAFF/MAFF_snps.rds")
+MAFF_snps <- readRDS("RORB/MAFF/MAFF_snps.rds")
+MAFF_snps <- subset(MAFF_snps, dataSource %in% c("jaspar2022", "HOCOMOCOv11-core-A"))
+MAFF_snps$Refpvalue <- NULL
+MAFF_snps$Altpvalue <- NULL
 
-df_GLIS1 <- data.frame(GLIS1_snps)
-df_GLIS1 <- df_GLIS1[df_GLIS1$effect=="strong",]
-table(df_GLIS1$SNP_id)
-plot_SNPs(GLIS1_snps, dir_path = "RORB/GLIS1")
+df_MAFF <- data.frame(MAFF_snps)
+df_MAFF <- df_MAFF[df_MAFF$effect=="strong",]
+table(df_MAFF$SNP_id)
+plot_SNPs(MAFF_snps, dir_path = "RORB/MAFF")

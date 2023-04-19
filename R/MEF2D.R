@@ -1,8 +1,8 @@
 
 rorb_uniques <- readr::read_csv("rorb_uniques.csv")
-region_GLIS1 <- rorb_uniques$promoter[rorb_uniques$TF=="GLIS1"]
-motif_name <- "GLIS1"
-region <- region_GLIS1
+region_MEF2D <- rorb_uniques$promoter[rorb_uniques$TF=="MEF2D"]
+motif_name <- "MEF2D"
+region <- region_MEF2D
 suppressMessages(library(SNPlocs.Hsapiens.dbSNP155.GRCh38))
 suppressMessages(library(motifbreakR))
 suppressMessages(library(MotifDb))
@@ -28,18 +28,18 @@ results_1 <- motifbreakR::motifbreakR(snpList = snps.mb, filterp = TRUE,
                                       method = "ic",
                                       BPPARAM = BiocParallel::MulticoreParam(6))
 
-GLIS1_snps <- results_1
+MEF2D_snps <- results_1
 
 
-# GLIS1_snps <- search_motifBreak(motif_name = "GLIS1", region = region_GLIS1)
-dir.create("RORB/GLIS1")
-saveRDS(GLIS1_snps, "RORB/GLIS1/GLIS1_snps.rds")
-GLIS1_snps <- readRDS("RORB/GLIS1/GLIS1_snps.rds")
-GLIS1_snps <- subset(GLIS1_snps, dataSource %in% c("jaspar2022", "HOCOMOCOv11-core-A"))
-GLIS1_snps$Refpvalue <- NULL
-GLIS1_snps$Altpvalue <- NULL
+# MEF2D_snps <- search_motifBreak(motif_name = "MEF2D", region = region_MEF2D)
+dir.create("RORB/MEF2D")
+saveRDS(MEF2D_snps, "RORB/MEF2D/MEF2D_snps.rds")
+MEF2D_snps <- readRDS("RORB/MEF2D/MEF2D_snps.rds")
+MEF2D_snps <- subset(MEF2D_snps, dataSource %in% c("jaspar2022", "HOCOMOCOv11-core-A"))
+MEF2D_snps$Refpvalue <- NULL
+MEF2D_snps$Altpvalue <- NULL
 
-df_GLIS1 <- data.frame(GLIS1_snps)
-df_GLIS1 <- df_GLIS1[df_GLIS1$effect=="strong",]
-table(df_GLIS1$SNP_id)
-plot_SNPs(GLIS1_snps, dir_path = "RORB/GLIS1")
+df_MEF2D <- data.frame(MEF2D_snps)
+df_MEF2D <- df_MEF2D[df_MEF2D$effect=="strong",]
+table(df_MEF2D$SNP_id)
+plot_SNPs(MEF2D_snps, dir_path = "RORB/MEF2D")

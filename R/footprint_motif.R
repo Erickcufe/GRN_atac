@@ -1,6 +1,8 @@
 
 Seurat.object.NEW <- readRDS("motifs_ATAC.rds")
 DefaultAssay(Seurat.object.NEW) <- "peaks"
+library("Signac")
+library(Seurat)
 
 # gather the footprinting information for sets of motifs
 
@@ -13,35 +15,76 @@ Seurat.object <- Footprint(
 
 Seurat.object <- Footprint(
   object = Seurat.object.NEW,
-  motif.name = c("HSF4", "GLIS1", "MYC", "NFKB2", "KLF5", "FOXG1"),
+  motif.name = c("MEF2D"),
   genome = BSgenome.Hsapiens.UCSC.hg38::BSgenome.Hsapiens.UCSC.hg38,
   in.peaks = TRUE
 )
 # plot the footprint data for each group of cells
 
+df <- GetFootprintData(Seurat.object, "MEF2D", group.by = "disease")
+df <- na.omit(df)
+
+df <- df[df$group=="RORB+",]
+jpeg("images/MEF2D_violin.jpeg", units="in", width=10, height=10, res=300)
+ggplot(df, aes(x = group, y = count, fill = group)) +
+  geom_violin(draw_quantiles = TRUE) + geom_boxplot(width = 0.3)+
+  geom_jitter(shape=16, position=position_jitter(0.2), alpha = 0.2) +
+  theme_classic() +
+  theme(text = element_text(size = 20))
+dev.off()
+
 Seurat.object$tags <- Idents(Seurat.object)
 
 saveRDS(Seurat.object, "footprint_TFs.rds")
 
-## TBR1
 
-p2 <- PlotFootprint(Seurat.object, features = "TBR1",
+Seurat.object_2 <- readRDS("footprint_TFs.rds")
+df_disease <- GetFootprintData(Seurat.object_2, "GLIS1", group.by = "disease")
+df_disease <- na.omit(df_disease)
+df_cells <- GetFootprintData(Seurat.object_2, "GLIS1", group.by = "disease")
+df_cells <- na.omit(df_cells)
+
+jpeg("images/GLIS1_violin.jpeg", units="in", width=10, height=10, res=300)
+ggplot(df_disease, aes(x = group, y = count, fill = group)) +
+  geom_violin(draw_quantiles = TRUE) + geom_boxplot(width = 0.3)+
+  geom_jitter(shape=16, position=position_jitter(0.2), alpha = 0.2) +
+  theme_classic() +
+  theme(text = element_text(size = 20))
+dev.off()
+
+
+df_disease <- GetFootprintData(Seurat.object_2, "HINFP", group.by = "disease")
+df_disease <- na.omit(df_disease)
+df_cells <- GetFootprintData(Seurat.object_2, "HINFP", group.by = "disease")
+df_cells <- na.omit(df_cells)
+
+jpeg("images/HINFP_violin.jpeg", units="in", width=10, height=10, res=300)
+ggplot(df_disease, aes(x = group, y = count, fill = group)) +
+  geom_violin(draw_quantiles = TRUE) + geom_boxplot(width = 0.3)+
+  geom_jitter(shape=16, position=position_jitter(0.2), alpha = 0.2) +
+  theme_classic() +
+  theme(text = element_text(size = 20))
+dev.off()
+
+## MEF2D
+
+p2 <- PlotFootprint(Seurat.object, features = "MEF2D",
                     # idents = c("Pv", "RORB+","Ex", "Vip", "Non-Vip", "Sst"),
                     group.by = c("disease")) +
   theme(text = element_text(size = 20))
 
 
-p3 <- PlotFootprint(Seurat.object, features = "TBR1",
+p3 <- PlotFootprint(Seurat.object, features = "MEF2D",
                     idents = c("Pv", "RORB+","Ex", "Vip", "Non-Vip", "Sst")) +
   theme(text = element_text(size = 20))
 
 
-jpeg("images/TBR1_disease_motif.jpeg", units="in", width=10, height=10, res=300)
+jpeg("images/MEF2D_disease_motif.jpeg", units="in", width=10, height=10, res=300)
 p2
 dev.off()
 
 
-jpeg("images/TBR1_motif.jpeg", units="in", width=10, height=10, res=300)
+jpeg("images/MEF2D_motif.jpeg", units="in", width=10, height=10, res=300)
 p3
 dev.off()
 
